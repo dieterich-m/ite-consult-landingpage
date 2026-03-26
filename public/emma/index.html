@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Build/Version: 2026-03-03.11 -->
+  <meta name="ite-version" content="2026-03-03.11">
+
+  <title>RPA für öffentliche Verwaltungen & KMU: Freiraum durch EMMA | ITE Consult</title>
+  <meta name="description" content="Schluss mit repetitiven Aufgaben! Erfahren Sie im WebCast mit NetPlans, wie die kognitive KI EMMA Ihr Team entlastet. Jetzt kostenfrei anmelden & Zeit gewinnen.">
+
+  <link rel="canonical" href="https://www.ite-consult.de/emma/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RPA für öffentliche Verwaltungen & KMU: Freiheit durch EMMA | ITE Consult" />
+  <meta property="og:description" content="Kostenfreier WebCast mit NetPlans: Wie EMMA (WIANCO) Routinen übernimmt – und Ihr Team Zeit für sinnstiftende Arbeit gewinnt." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://www.ite-consult.de/emma/" />
+
+  <!-- Favicon / App Icon -->
+  <link rel="icon" href="/emma/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/emma/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/emma/favicon-180.png">
+
+  <!-- OG Image (WhatsApp/LinkedIn Vorschau) -->
+  <meta property="og:image" content="https://www.ite-consult.de/emma/og-emma.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- System Fonts only (keine externen Google Fonts) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Helvetica','Arial','sans-serif'],
+            serif: ['ui-serif','Georgia','Cambria','Times New Roman','serif'],
+          },
+          colors: {
+            ink: '#0B1220',
+            slate: '#334155',
+            mist: '#F6F7FB',
+            line: '#E6E8EF',
+            accent: '#1D4ED8'
+          },
+          boxShadow: {
+            soft: '0 20px 60px -30px rgba(11, 18, 32, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { color-scheme: light; }
+    html { scroll-behavior: smooth; }
+    .container-max { max-width: 1120px; }
+    .focus-ring:focus { outline: 3px solid rgba(29,78,216,.25); outline-offset: 2px; }
+    .noise {
+      background-image: radial-gradient(rgba(11,18,32,.04) 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ITE Consult GmbH",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hauptstraße 60",
+      "addressLocality": "Sargenroth",
+      "postalCode": "55471",
+      "addressCountry": "DE"
+    },
+    "url": "https://www.ite-consult.de/",
+    "email": "michael.dieterich@ite-consult.de",
+    "telephone": "+49 175 185 3983"
+  }
+  </script>
+
+  <!-- LocalBusiness Structured Data (für „Lokale Unternehmen“ / Google Business Profile Signale) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ITE Consult GmbH",
+    "url": "https://www.ite-consult.de/",
+    "telephone": "+49 175 185 3983",
+    "email": "michael.dieterich@ite-consult.de",
+    "image": "https://www.ite-consult.de/emma/og-emma.png",
+    "logo": "https://www.ite-consult.de/emma/favicon-180.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hauptstraße 60",
+      "postalCode": "55471",
+      "addressLocality": "Sargenroth",
+      "addressCountry": "DE"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Deutschland"
+    },
+    "description": "Automatisierung und Prozessoptimierung für KMU und öffentliche Verwaltungen. Fokus: Entlastung, Stabilität, nachvollziehbare Abläufe (RPA, kognitive KI, Systemarchitektur)."
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist ein typischer Einstieg in die Automatisierung im Mittelstand (ohne Großprojekt)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein guter Einstieg startet mit 1–2 klaren Backoffice-Prozessen (z. B. Posteingang, Abgleiche, Dokumentenerstellung), die häufig vorkommen und messbar sind. Ziel ist ein kleiner, stabiler Prototyp, damit Nutzen, Aufwand und Risiko früh transparent werden."
+        }
+      },
+
+      {
+        "@type": "Question",
+        "name": "Was ist EMMA (WIANCO) – und was bedeutet kognitive KI konkret?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EMMA ist eine kognitive KI, die wiederkehrende Aufgaben in Geschäftsprozessen übernimmt – etwa Informationen erfassen, prüfen, abgleichen, klassifizieren und Ergebnisse dokumentieren. Ziel ist Entlastung, Stabilität und nachvollziehbare Abläufe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Für welche Prozesse in Verwaltung und KMU lohnt sich ein Einstieg besonders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typisch sind Posteingang/E-Mail-Routing, Datenübernahmen, Prüfungen/Abgleiche, Dokumentenerstellung, Status- und Fristenpflege sowie wiederkehrende Backoffice-Aufgaben."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie läuft der NetPlans WebCast ab und was ist der schnellste nächste Schritt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der WebCast ist kompakt und praxisnah. Der schnellste nächste Schritt ist die kostenfreie Anmeldung. Danach lässt sich mit einer kurzen Prozessliste (Top 5 Routinen) prüfen, wo EMMA den größten Hebel bringt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet der WebCast und gibt es eine Verpflichtung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Teilnahme ist kostenfrei und ohne Verpflichtung. Ziel ist Klarheit, ob und wie ein Einstieg sinnvoll ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie werden Ergebnisse protokolliert und wie bleibt die Kontrolle erhalten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gute Automatisierung arbeitet nachvollziehbar – mit Status, Protokollen und klaren Ergebnissen je Vorgang. Das reduziert Rückfragen und erhöht Transparenz."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie starte ich, wenn ich Datenschutz und IT-Sicherheit sauber halten will?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start mit WebCast und klarem Prozess-Scope. Danach werden Datenflüsse, Zugriffsrechte, Protokollierung und passende Systemarchitektur pragmatisch geprüft und umgesetzt."
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="font-sans text-ink bg-white">
+  <!-- zentrale CTA-URL -->
+  <script>
+    window.NETPLANS_FORM_URL = "https://www.netplans.de/veranstaltungen/netplans-webcast-emma-im-einsatz-22-04-2026/";
+  </script>
+
+  <!-- Skip Link -->
+  <a href="#content" class="sr-only focus:not-sr-only focus:ring-4 focus:ring-blue-200 focus:outline-none absolute left-4 top-4 bg-white px-4 py-2 rounded-lg shadow-soft">
+    Zum Inhalt springen
+  </a>
+
+  <!-- Header -->
+  <header class="border-b border-line bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+    <div class="mx-auto container-max px-5 py-4 flex items-center justify-between gap-6">
+      <div class="flex items-center gap-3 shrink-0 max-w-[340px]">
+        <div class="w-10 h-10 rounded-xl bg-ink text-white flex items-center justify-center font-semibold shadow-sm" aria-hidden="true">ITE</div>
+        <div class="leading-tight min-w-0">
+          <p class="font-semibold truncate">ITE Consult GmbH</p>
+          <p class="text-xs sm:text-sm text-slate leading-snug">Digitalisierung &amp; Automatisierung mit Herz und Verstand.</p>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-5 text-sm">
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-1" href="#emma">EMMA</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-1" href="#impuls">Impuls</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-1" href="#webcast">WebCast</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-3 py-1 whitespace-nowrap" href="#warum">Warum wir das tun</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-1" href="#impressum">Impressum</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="javascript:void(0)" data-netplans
+           class="hidden sm:inline-flex items-center justify-center rounded-xl bg-accent text-white px-4 py-2 text-sm font-semibold shadow-soft hover:opacity-95 focus-ring">
+          Kostenfrei anmelden
+        </a>
+
+        <button id="mobileMenuBtn"
+                class="md:hidden inline-flex items-center justify-center rounded-xl border border-line px-3 py-2 text-sm font-semibold hover:bg-mist focus-ring"
+                aria-expanded="false"
+                aria-controls="mobileMenu">
+          Menü
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-line bg-white">
+      <div class="mx-auto container-max px-5 py-4 flex flex-col gap-3 text-sm">
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-2" href="#emma">EMMA</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-2" href="#impuls">Impuls</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-2" href="#webcast">WebCast</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-2" href="#warum">Warum wir das tun</a>
+        <a class="text-slate hover:text-ink focus-ring rounded-md px-2 py-2" href="#impressum">Impressum</a>
+        <a href="javascript:void(0)" data-netplans
+           class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-4 py-2 text-sm font-semibold shadow-soft hover:opacity-95 focus-ring">
+          Kostenfrei anmelden
+        </a>
+      </div>
+    </div>
+  </header>
+
+<main id="content">
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 noise" aria-hidden="true"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-100 blur-3xl opacity-70" aria-hidden="true"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-slate-100 blur-3xl opacity-80" aria-hidden="true"></div>
+
+    <div class="relative mx-auto container-max px-5 pt-14 pb-12 md:pt-20 md:pb-16">
+      <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-7">
+          <div class="rounded-3xl border border-line bg-white shadow-soft p-4 sm:p-5">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 w-9 h-9 rounded-2xl bg-accent text-white flex items-center justify-center font-bold" aria-hidden="true">WC</div>
+                <div>
+                  <p class="text-lg sm:text-4xl font-semibold text-ink leading-tight">NetPlans WebCast (alle 6 Wochen)</p>
+                  <p class="mt-1 text-base sm:text-lg font-semibold text-slate leading-snug">EMMA (WIANCO) live im Einsatz: Routinen raus, Zeit fürs Wesentliche</p>
+                  <p class="mt-1 text-sm text-slate">Kostenfrei teilnehmen · Praxisbeispiele für KMU &amp; öffentliche Verwaltungen</p>
+
+<div class="mt-3 flex flex-wrap gap-2">
+  <a href="/emma/termine/"
+     class="inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-1.5 text-sm font-semibold text-ink hover:bg-mist focus-ring">
+    <span class="w-2 h-2 rounded-full bg-accent" aria-hidden="true"></span>
+    Termine ansehen
+  </a>
+
+  <a href="/emma/use-cases/"
+     class="inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-1.5 text-sm font-semibold text-ink hover:bg-mist focus-ring">
+    <span class="w-2 h-2 rounded-full bg-accent" aria-hidden="true"></span>
+    Use Cases ansehen
+  </a>
+</div>
+
+
+                </div>
+              </div>
+
+              <a href="javascript:void(0)" data-netplans
+                 class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-5 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">
+                WebCast-Platz sichern
+              </a>
+            </div>
+          </div>
+
+          <h1 class="mt-5 font-serif text-4xl md:text-5xl leading-tight">
+            Zeit für das Wesentliche.
+            <span class="block text-slate">Freiheit durch Automatisierung mit EMMA.</span>
+          </h1>
+          <!-- ... danach geht dein Hero-Text weiter ... -->
+
+            <p class="mt-4 text-base md:text-lg text-slate leading-relaxed">
+              <strong>RPA und kognitive KI</strong> für <strong>öffentliche Verwaltungen</strong> und <strong>KMU</strong>: Routinen automatisieren, Fehler reduzieren, Durchlaufzeiten verkürzen – und Zeit für das Wesentliche gewinnen.
+            </p>
+
+            <p class="mt-5 text-lg text-slate leading-relaxed">
+              Repetitive Aufgaben binden Energie, Aufmerksamkeit und Motivation. EMMA übernimmt Routinen verlässlich
+              und schafft Raum für Arbeit, die Sinn stiftet: für bessere Entscheidungen, echte Kommunikation und spürbare Wirkung.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="javascript:void(0)" data-netplans
+                 class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">
+                Jetzt kostenfrei anmelden
+              </a>
+              <a href="#emma"
+                 class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist focus-ring">
+                Erst verstehen, dann starten
+              </a>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="rounded-2xl border border-line bg-white p-4">
+                <p class="text-sm text-slate">Nutzen</p>
+                <p class="mt-1 font-semibold">Entlastung im Alltag</p>
+              </div>
+              <div class="rounded-2xl border border-line bg-white p-4">
+                <p class="text-sm text-slate">Wirkung</p>
+                <p class="mt-1 font-semibold">Weniger Fehler, mehr Kontrolle</p>
+              </div>
+              <div class="rounded-2xl border border-line bg-white p-4">
+                <p class="text-sm text-slate">Ergebnis</p>
+                <p class="mt-1 font-semibold">Zeitgewinn fürs Wesentliche</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-5">
+            <div class="rounded-3xl border border-line bg-white shadow-soft p-6 md:p-7">
+              <picture>
+                <source srcset="/emma/img/hero-tech.webp" type="image/webp">
+                <img src="/emma/img/hero-tech.webp" alt="Digitale Automatisierung: Struktur, Klarheit und Tempo" class="w-full h-44 object-cover rounded-2xl border border-line" loading="eager" decoding="async">
+              </picture>
+
+              <h2 class="mt-5 font-serif text-2xl">Was Sie im WebCast mitnehmen</h2>
+              <ul class="mt-4 space-y-3 text-slate">
+                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Wie EMMA kognitive Aufgaben und Routineprozesse stabil abarbeitet.</span></li>
+                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Welche Prozesse sich in Verwaltung und KMU besonders schnell lohnen.</span></li>
+                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Welche Stolpersteine es gibt und wie man sie pragmatisch vermeidet.</span></li>
+                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Wie aus Automatisierung echte Entlastung wird: messbar, protokolliert, nachvollziehbar.</span></li>
+              </ul>
+
+              <div class="mt-6 rounded-2xl bg-mist p-4 border border-line">
+                <p class="text-sm text-slate">Anmeldung</p>
+                <p class="mt-1 font-semibold">Kostenfrei, in wenigen Klicks</p>
+                <a href="javascript:void(0)" data-netplans
+                   class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-ink text-white px-5 py-3 font-semibold hover:opacity-95 focus-ring">
+                  Zum NetPlans Formular
+                </a>
+                <p class="mt-3 text-xs text-slate">Hinweis: Link führt direkt zum NetPlans-Anmeldeformular.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impuls (Business Breakfast) -->
+    <section id="impuls" class="bg-white border-t border-line">
+      <div class="mx-auto container-max px-5 py-14 md:py-18">
+        <div class="grid md:grid-cols-12 gap-10 items-start">
+          <div class="md:col-span-7">
+            <h2 class="font-serif text-3xl md:text-4xl">Smarte Automatisierung im Mittelstand</h2>
+            <p class="mt-4 text-slate text-lg leading-relaxed">
+              Ein kurzer Impuls aus unserem letzten NetPlans Business Breakfast – zugeschnitten auf <strong>KMU</strong> und den <strong>Mittelstand</strong>.
+              Konkret geht es um <strong>Automatisierung im Alltag</strong>: weniger manuelles Nacharbeiten im <strong>Backoffice</strong>, weniger Fehler – und mehr Zeit für Kunden, Team und Kerngeschäft.
+            </p>
+
+            <div class="mt-6 rounded-3xl border border-line bg-mist p-7">
+              <p class="text-sm text-slate">Anekdote (Kurzfassung)</p>
+              <p class="mt-2 font-semibold">Der Schreinermeister – und der Sonntagvormittag</p>
+              <p class="mt-3 text-slate leading-relaxed">
+                Ein Handwerksbetrieb, ein teurer PC als Staubfänger – und Rechnungen, die jeden Sonntagmorgen per Hand entstanden.
+                Der Durchbruch war nicht „Technik“, sondern ein einfacher Knopf: Monatsbericht auf Knopfdruck. Ergebnis: <strong>Sonntag zurück.</strong>
+              </p>
+            </div>
+
+            <h3 class="mt-8 font-semibold text-lg">Was KMU und öffentliche Verwaltungen heute bremst</h3>
+            <ul class="mt-3 space-y-2 text-slate">
+              <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Repetitive Aufgaben im Backoffice: Kopieren, Abtippen, Sortieren – jeden Tag.</span></li>
+              <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Fachkräftemangel: Die wertvollen Köpfe stecken in Routine fest.</span></li>
+              <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>IT‑Silos: Systeme sprechen nicht miteinander – Medienbrüche kosten Zeit (KMU &amp; Verwaltung).</span></li>
+              <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Angst vor Großprojekten: hohe Budgets, lange Laufzeiten, dicke Lastenhefte.</span></li>
+            </ul>
+
+            <h3 class="mt-8 font-semibold text-lg">Unser Prinzip</h3>
+            <p class="mt-3 text-slate leading-relaxed">
+              <strong>Erst verstehen – dann automatisieren.</strong> Wir starten pragmatisch: Prozess ansehen, Engpass finden, Prototyp bauen.
+              In vielen Fällen sind in <strong>wenigen Tagen</strong> erste, funktionierende Entlastungen möglich.
+            </p>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a href="#faq" class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist focus-ring">
+                Häufige Fragen ansehen
+              </a>
+              <a href="javascript:void(0)" data-netplans class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">
+                WebCast-Platz sichern
+              </a>
+            </div>
+          </div>
+
+          <div class="md:col-span-5">
+            <div class="rounded-3xl border border-line bg-white p-7 shadow-soft">
+              <p class="text-sm text-slate">Mehrwert (konkret)</p>
+              <h3 class="mt-1 font-serif text-2xl">Klarheit. 24/7. Fokus. Zeit.</h3>
+              <ul class="mt-4 space-y-2 text-slate">
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Transparenz statt Bauchgefühl</span></li>
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Automatisierung macht keine Pause</span></li>
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Kopf frei fürs Kerngeschäft</span></li>
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Ergebnisse auf Knopfdruck</span></li>
+              </ul>
+              <div class="mt-6 rounded-2xl bg-mist p-5 border border-line">
+                <p class="text-sm text-slate">Passend für KMU</p>
+                <p class="mt-1 font-semibold">Smarte Automatisierung „oben drauf“ – ohne jahrelange IT‑Projekte.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EMMA -->
+    <section id="emma" class="bg-white">
+      <div class="mx-auto container-max px-5 py-14 md:py-18">
+        <div class="max-w-3xl">
+          <h2 class="font-serif text-3xl md:text-4xl leading-tight">EMMA von WIANCO: kognitive KI, die Routinen wirklich abnimmt</h2>
+          <p class="mt-4 text-slate text-lg leading-relaxed">
+            EMMA ist eine kognitive KI, die wiederkehrende Tätigkeiten nicht nur automatisiert, sondern in der Praxis mitdenkt:
+            Informationen finden, abgleichen, klassifizieren, dokumentieren und sauber protokollieren. Ziel ist nicht mehr Technik,
+            sondern weniger Reibung im Alltag.
+          </p>
+        </div>
+
+        <div class="mt-10">
+
+          <picture>
+            <source srcset="/emma/img/emma-brain.webp" type="image/webp">
+            <img src="/emma/img/emma-brain.webp" alt="Kognitive KI EMMA: Geschwindigkeit und Datenfluss" class="w-full h-60 md:h-72 object-cover rounded-3xl border border-line shadow-soft" loading="lazy" decoding="async">
+          </picture>
+          <p class="mt-3 text-xs text-slate">Hinweis: Visualisierung (KI-generiert) zur Veranschaulichung von Datenfluss und Automatisierung.</p>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <div class="rounded-3xl border border-line bg-mist p-6"><h3 class="font-semibold text-lg">Entlastung</h3><p class="mt-2 text-slate leading-relaxed">EMMA übernimmt Routinearbeit. Ihr Team gewinnt Fokus zurück: für Vorgänge, die Menschen brauchen.</p></div>
+          <div class="rounded-3xl border border-line bg-mist p-6"><h3 class="font-semibold text-lg">Stabilität</h3><p class="mt-2 text-slate leading-relaxed">Weniger Medienbrüche, weniger Ausnahmen. Prozesse laufen konsistenter, auch bei hoher Last.</p></div>
+          <div class="rounded-3xl border border-line bg-mist p-6"><h3 class="font-semibold text-lg">Nachvollziehbarkeit</h3><p class="mt-2 text-slate leading-relaxed">Protokolle, Status und Ergebnisse sind transparent. Das schafft Kontrolle und reduziert Rückfragen.</p></div>
+        </div>
+
+        <div class="mt-10 rounded-3xl border border-line bg-white p-7 shadow-soft">
+          <div class="grid md:grid-cols-12 gap-6 items-start">
+            <div class="md:col-span-7">
+              <h3 class="font-serif text-2xl">Für wen ist das besonders spannend?</h3>
+              <p class="mt-3 text-slate leading-relaxed">
+                Für öffentliche Verwaltungen und KMU, die viele gleichartige Vorgänge bearbeiten: Daten aufnehmen, prüfen,
+                abgleichen, Dokumente erzeugen, Status nachhalten, Fristen im Blick behalten.
+              </p>
+              <ul class="mt-4 space-y-2 text-slate">
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Backoffice-Prozesse mit vielen Wiederholungen</span></li>
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Vorgänge mit klaren Regeln und hohem Dokumentationsanteil</span></li>
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Teams, die Zeit zurückgewinnen wollen, ohne Qualität zu verlieren</span></li>
+              </ul>
+            </div>
+            <div class="md:col-span-5">
+              <div class="rounded-2xl bg-mist border border-line p-5">
+                <p class="text-sm text-slate">Spiritueller Impuls</p>
+                <p class="mt-2 font-serif text-xl leading-snug">„Routine abgeben heißt nicht Kontrolle verlieren. Es heißt, Vertrauen in gute Prozesse zu gewinnen – und den Menschen wieder Raum zu geben.“</p>
+                <p class="mt-3 text-sm text-slate">Genau darum drehen sich die WebCasts: weniger Ballast, mehr Wirkung.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ (für Nutzer + SEO) -->
+    <section id="faq" class="bg-white border-t border-line">
+      <div class="mx-auto container-max px-5 py-14 md:py-18">
+        <div class="max-w-3xl">
+          <h2 class="font-serif text-3xl md:text-4xl">FAQ: EMMA, WebCast und Einstieg</h2>
+          <p class="mt-4 text-slate text-lg leading-relaxed">Die häufigsten Fragen, die wir von öffentlichen Verwaltungen und KMU hören – kurz beantwortet.</p>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-12 gap-6">
+          <div class="md:col-span-8 space-y-3">
+            <details class="group rounded-2xl border border-line bg-white p-5">
+              <summary class="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
+                <span>Was ist EMMA (WIANCO) – und was bedeutet „kognitive KI“ konkret?</span>
+                <span class="text-slate group-open:rotate-45 transition" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate leading-relaxed">
+                EMMA ist eine kognitive KI, die wiederkehrende Aufgaben in Geschäftsprozessen übernimmt – z. B. Informationen erfassen, prüfen,
+                abgleichen, klassifizieren und Ergebnisse sauber dokumentieren. Der Fokus liegt auf Entlastung, Stabilität und nachvollziehbaren Abläufen.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-line bg-white p-5">
+              <summary class="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
+                <span>Für welche Prozesse in Verwaltung und KMU lohnt sich ein Einstieg besonders?</span>
+                <span class="text-slate group-open:rotate-45 transition" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate leading-relaxed">
+                Überall dort, wo viele ähnliche Vorgänge anfallen: Posteingang/E-Mail-Routing, Datenübernahmen, Prüfungen/Abgleiche,
+                Dokumentenerstellung, Status- und Fristenpflege sowie wiederkehrende Backoffice-Aufgaben.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-line bg-white p-5">
+              <summary class="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
+                <span>Wie läuft der NetPlans WebCast ab und was ist der schnellste nächste Schritt?</span>
+                <span class="text-slate group-open:rotate-45 transition" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate leading-relaxed">
+                Der WebCast ist kompakt, praxisnah und zeigt typische Prozessmuster. Der schnellste nächste Schritt ist die kostenfreie Anmeldung.
+                Danach kannst du mit einer kurzen Prozessliste (Top 5 Routinen) prüfen, ob EMMA bei euch den größten Hebel hat.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-line bg-white p-5">
+              <summary class="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
+                <span>Was kostet der WebCast und gibt es eine Verpflichtung?</span>
+                <span class="text-slate group-open:rotate-45 transition" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate leading-relaxed">
+                Die Teilnahme am WebCast ist kostenfrei. Es gibt keine Verpflichtung – du bekommst Klarheit, ob und wie ein Einstieg sinnvoll ist.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-line bg-white p-5">
+              <summary class="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
+                <span>Wie werden Ergebnisse protokolliert und wie bleibt die Kontrolle erhalten?</span>
+                <span class="text-slate group-open:rotate-45 transition" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate leading-relaxed">
+                Ein guter Automatisierungsansatz arbeitet nachvollziehbar: mit Status, Protokollen und klaren Ergebnissen je Vorgang.
+                Genau darauf ist die Umsetzung ausgerichtet – weniger Rückfragen, mehr Transparenz.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-line bg-white p-5">
+              <summary class="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
+                <span>Wie starte ich, wenn ich Datenschutz und IT-Sicherheit sauber halten will?</span>
+                <span class="text-slate group-open:rotate-45 transition" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate leading-relaxed">
+                Starte mit dem WebCast und einem klaren Prozess-Scope. Danach prüfen wir gemeinsam Datenflüsse, Zugriffsrechte, Protokollierung
+                und die passende Systemarchitektur – pragmatisch und umsetzbar.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-line bg-white p-5">
+              <summary class="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
+                <span>Was ist ein typischer Einstieg in die Automatisierung im Mittelstand (ohne Großprojekt)?</span>
+                <span class="text-slate group-open:rotate-45 transition" aria-hidden="true">+</span>
+              </summary>
+              <p class="mt-3 text-slate leading-relaxed">
+                Wir starten mit 1–2 klaren Backoffice-Prozessen (z. B. Posteingang, Abgleiche, Dokumentenerstellung), die oft vorkommen und messbar sind.
+                Ziel ist ein kleiner, stabiler Prototyp – damit Nutzen, Aufwand und Risiko früh transparent werden.
+              </p>
+            </details>
+          </div>
+
+          <div class="md:col-span-4">
+            <div class="rounded-3xl border border-line bg-mist p-6">
+              <p class="text-sm text-slate">Schnellstart</p>
+              <p class="mt-1 font-semibold">WebCast ansehen → Top 5 Routinen sammeln → nächsten Schritt planen</p>
+              <a href="javascript:void(0)" data-netplans class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">
+                Kostenfrei anmelden
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Webcast -->
+    <section id="webcast" class="bg-mist border-t border-line">
+      <div class="mx-auto container-max px-5 py-14 md:py-18">
+        <div class="grid md:grid-cols-12 gap-10 items-start">
+          <div class="md:col-span-7">
+            <h2 class="font-serif text-3xl md:text-4xl">NetPlans WebCast: alle 6 Wochen. Praxisnah. Klar.</h2>
+            <p class="mt-4 text-slate text-lg leading-relaxed">In den regelmäßigen WebCasts zeigt NetPlans, wie EMMA in realen Abläufen eingesetzt wird. Keine Show, sondern Substanz: typische Prozessmuster, konkrete Beispiele, echte Learnings.</p>
+
+            <div class="mt-8 grid sm:grid-cols-2 gap-5">
+              <div class="rounded-3xl border border-line bg-white p-6"><p class="text-sm text-slate">Format</p><p class="mt-1 font-semibold">Kurz, fokussiert, mit Q&A</p><p class="mt-2 text-slate">Ideal, wenn Sie schnell prüfen wollen, ob EMMA zu Ihren Abläufen passt.</p></div>
+              <div class="rounded-3xl border border-line bg-white p-6"><p class="text-sm text-slate">Ergebnis</p><p class="mt-1 font-semibold">Klarheit statt Bauchgefühl</p><p class="mt-2 text-slate">Sie wissen danach, welche Schritte sinnvoll sind und welche nicht.</p></div>
+            </div>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="javascript:void(0)" data-netplans class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">WebCast-Platz sichern</a>
+              <a href="#warum" class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-white/60 focus-ring">Warum ITE Consult das empfiehlt</a>
+            </div>
+          </div>
+
+          <div class="md:col-span-5">
+            <div class="rounded-3xl border border-line bg-white p-7 shadow-soft">
+              <h3 class="font-serif text-2xl">Schneller Check: passt das zu uns?</h3>
+              <div class="mt-4 space-y-3">
+                <label class="flex items-start gap-3"><input type="checkbox" class="mt-1 h-5 w-5 rounded border-line text-accent focus:ring-2 focus:ring-blue-200" /><span class="text-slate">Wir haben wiederkehrende Vorgänge mit klaren Regeln.</span></label>
+                <label class="flex items-start gap-3"><input type="checkbox" class="mt-1 h-5 w-5 rounded border-line text-accent focus:ring-2 focus:ring-blue-200" /><span class="text-slate">Dokumentation/Protokollierung ist wichtig (intern oder extern).</span></label>
+                <label class="flex items-start gap-3"><input type="checkbox" class="mt-1 h-5 w-5 rounded border-line text-accent focus:ring-2 focus:ring-blue-200" /><span class="text-slate">Wir wollen Rückfragen, Fehler und Durchlaufzeiten reduzieren.</span></label>
+                <label class="flex items-start gap-3"><input type="checkbox" class="mt-1 h-5 w-5 rounded border-line text-accent focus:ring-2 focus:ring-blue-200" /><span class="text-slate">Unser Team braucht Entlastung, damit Qualität wieder Freude macht.</span></label>
+              </div>
+
+              <div class="mt-6 rounded-2xl bg-mist p-5 border border-line">
+                <p class="text-sm text-slate">Wenn Sie hier mehrfach nicken:</p>
+                <p class="mt-1 font-semibold">Dann ist der WebCast der beste erste Schritt.</p>
+                <a href="javascript:void(0)" data-netplans class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-ink text-white px-5 py-3 font-semibold hover:opacity-95 focus-ring">Kostenfrei anmelden</a>
+              </div>
+
+              <p class="mt-4 text-xs text-slate">Tipp: Speichern Sie diese Seite als internes Briefing, damit Fachbereich und IT gleich sprechen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warum -->
+    <section id="warum" class="bg-white border-t border-line">
+      <div class="mx-auto container-max px-5 py-14 md:py-18">
+        <div class="grid md:grid-cols-12 gap-10 items-start">
+          <div class="md:col-span-7">
+            <h2 class="font-serif text-3xl md:text-4xl">Warum wir das tun</h2>
+            <p class="mt-4 text-slate text-lg leading-relaxed">Wir sehen jeden Tag, was Routinearbeit anrichtet: Zeitdruck, Fehler, Frust, Stillstand. Und wir sehen, was passiert, wenn die Routine zuverlässig wegfällt: Menschen atmen auf.</p>
+            <p class="mt-4 text-slate text-lg leading-relaxed">Darum empfehlen wir EMMA aus Überzeugung: nicht als Trend, sondern als Werkzeug zur Befreiung. Damit Mitarbeiter wieder dort wirken, wo es zählt: im Gespräch, in der Lösung, in der Verantwortung.</p>
+
+            <div class="mt-8 rounded-3xl bg-mist border border-line p-7">
+              <h3 class="font-semibold text-lg">Unser Anspruch</h3>
+              <ul class="mt-3 space-y-2 text-slate">
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Automatisierung muss entlasten, nicht verwirren.</span></li>
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Prozesse müssen stabil laufen und nachvollziehbar bleiben.</span></li>
+                <li class="flex gap-2"><span class="text-accent font-bold" aria-hidden="true">•</span><span>Der Nutzen muss messbar sein: Durchlaufzeit, Fehlerquote, Transparenz.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="md:col-span-5">
+            <div class="rounded-3xl border border-line bg-white p-7 shadow-soft">
+              <h3 class="font-serif text-2xl">Nächster Schritt</h3>
+              <p class="mt-3 text-slate leading-relaxed">Starten Sie klein: Erst den WebCast ansehen, dann die passenden Prozesse identifizieren. Wenn Sie möchten, begleiten wir Sie bei Bewertung, Pilot und sauberer Umsetzung.</p>
+
+              <div class="mt-6 flex flex-col gap-3">
+                <a href="javascript:void(0)" data-netplans class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">Jetzt zum WebCast anmelden</a>
+                <a id="mailBtn" href="mailto:michael.dieterich@ite-consult.de?subject=R%C3%BCckfrage%20zum%20NetPlans%20WebCast%20EMMA&body=Hallo%20Herr%20Dieterich%2C%0D%0A%0D%0Aich%20habe%20eine%20kurze%20R%C3%BCckfrage%20zum%20WebCast%20%2F%20EMMA%3A%0D%0A%0D%0A%5BMeine%20Frage%5D%0D%0A%0D%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen%0D%0A%5BName%5D" class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist focus-ring">Rückfrage an ITE Consult</a>
+
+                <div class="text-center text-xs text-slate">
+                  Falls Ihr Mailprogramm nicht öffnet:
+                  <span id="mailText" class="font-mono select-all">michael.dieterich@ite-consult.de</span>
+                  <button type="button" id="copyMailBtn" class="ml-2 inline-flex items-center rounded-lg border border-line bg-white px-2 py-1 font-semibold hover:bg-mist focus-ring">E-Mail kopieren</button>
+                  <span id="copyMailState" class="ml-2"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="bg-ink text-white">
+      <div class="mx-auto container-max px-5 py-14">
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-8">
+            <h2 class="font-serif text-3xl md:text-4xl">Geben Sie Routine ab. Gewinnen Sie Wirkung zurück.</h2>
+            <p class="mt-3 text-white/80 text-lg leading-relaxed">Der WebCast ist der beste Einstieg: kostenfrei, konkret und ohne Verpflichtung. Wenn es passt, gehen Sie den nächsten Schritt mit Klarheit statt Bauchgefühl.</p>
+          </div>
+          <div class="md:col-span-4 flex md:justify-end">
+            <a href="javascript:void(0)" data-netplans class="inline-flex w-full md:w-auto items-center justify-center rounded-xl bg-white text-ink px-7 py-3 font-semibold hover:opacity-95 focus-ring">WebCast-Platz sichern</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Impressum -->
+  <footer id="impressum" class="bg-white border-t border-line">
+    <div class="mx-auto container-max px-5 py-12">
+      <div class="grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-ink text-white flex items-center justify-center font-semibold" aria-hidden="true">ITE</div>
+            <div>
+              <p class="font-semibold">ITE Consult GmbH</p>
+              <p class="text-sm text-slate">Sargenroth · Automatisierung für öffentliche Verwaltungen & KMU</p>
+            </div>
+          </div>
+          <p class="mt-4 text-slate leading-relaxed">Wir helfen, Routinearbeit zu reduzieren und Prozesse stabil zu machen. Damit Menschen wieder Zeit haben für das, was Sinn stiftet.</p>
+        </div>
+
+        <div class="md:col-span-7">
+          <h3 class="font-serif text-2xl">Impressum</h3>
+
+          <div class="mt-4 space-y-4 text-slate">
+            <div>
+              <p class="font-semibold text-ink">Angaben gemäß § 5 TMG:</p>
+              <p>ITE Consult GmbH<br>
+                Hauptstraße 60<br>
+                55471 Sargenroth
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-ink">Vertreten durch:</p>
+              <p>Michael Dieterich</p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-ink">Kontakt:</p>
+              <p>Telefon: +49 175 185 3983<br>
+                E-Mail: <a class="text-accent hover:underline focus-ring rounded" href="mailto:michael.dieterich@ite-consult.de">michael.dieterich@ite-consult.de</a>
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-ink">Registereintrag:</p>
+              <p>
+                Eintragung im Handelsregister:<br>
+                Registergericht: Amtsgericht Bad Kreuznach<br>
+                Registernummer: HRB 4367
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-ink">Umsatzsteuer-ID:</p>
+              <p>
+                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                DE219143426
+              </p>
+            </div>
+
+            <div>
+              <p class="font-semibold text-ink">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</p>
+              <p>
+                Michael Dieterich<br>
+                Hauptstraße 60, 55471 Sargenroth
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="javascript:void(0)" data-netplans class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">Zum WebCast anmelden</a>
+            <a href="#content" class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist focus-ring">Nach oben</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer Links -->
+      <div class="mt-10 pt-6 border-t border-line text-sm text-slate flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+        <p>© <span id="year"></span> ITE Consult GmbH. Alle Rechte vorbehalten.</p>
+
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <a href="/datenschutz/" class="text-accent hover:underline focus-ring rounded font-semibold">Datenschutz</a>
+          <a href="#impressum" class="text-accent hover:underline focus-ring rounded">Impressum</a>
+          <span class="hidden sm:inline text-slate/60">|</span>
+          <p class="text-slate/80">Tailwind via CDN</p>
+          <p class="text-slate/80">Version: <span class="font-mono">2026-03-03.11</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const isOpen = !menu.classList.contains('hidden');
+        menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+
+      menu.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Footer Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Setzt alle NetPlans-CTA-Links zentral
+    (function () {
+      const url = window.NETPLANS_FORM_URL || "#";
+      document.querySelectorAll('a[data-netplans]').forEach(a => a.setAttribute('href', url));
+    })();
+
+    // Copy email fallback (works on desktop + mobile)
+    (function () {
+      const email = 'michael.dieterich@ite-consult.de';
+      const btn = document.getElementById('copyMailBtn');
+      const state = document.getElementById('copyMailState');
+      const text = document.getElementById('mailText');
+
+      if (!btn || !state) return;
+
+      async function copy() {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(email);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = email;
+            ta.style.position = 'fixed';
+            ta.style.left = '-9999px';
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          }
+          state.textContent = 'Kopiert ✓';
+          setTimeout(() => (state.textContent = ''), 1500);
+        } catch {
+          state.textContent = 'Bitte manuell markieren und kopieren.';
+          setTimeout(() => (state.textContent = ''), 2500);
+        }
+      }
+
+      btn.addEventListener('click', copy);
+      if (text) text.addEventListener('click', copy);
+    })();
+  </script>
+</body>
+</html>
