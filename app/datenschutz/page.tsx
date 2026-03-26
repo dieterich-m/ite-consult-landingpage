@@ -144,7 +144,7 @@ export default function DatenschutzPage() {
               </h2>
               <p>
                 Diese Website nutzt SSL/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie
-                an „https://" und dem Schloss-Symbol in der Browserzeile.
+                an „https://&quot; und dem Schloss-Symbol in der Browserzeile.
               </p>
             </div>
 
