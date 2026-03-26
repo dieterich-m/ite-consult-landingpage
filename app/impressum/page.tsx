@@ -20,10 +20,6 @@ export default function ImpressumPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="prose prose-slate max-w-none space-y-8 text-sm leading-relaxed text-slate-700">
 
-            <div className="bg-amber-50 border border-amber-200 p-4 text-xs text-amber-800">
-              <strong>Hinweis:</strong> Dieses Impressum ist ein Muster und wurde noch nicht von einem Rechtsanwalt geprüft. Bitte lassen Sie es vor Veröffentlichung durch einen auf Internetrecht spezialisierten Rechtsanwalt prüfen.
-            </div>
-
             <div>
               <h2 className="text-base font-bold text-slate-900 mb-3">
                 Angaben gemäß § 5 TMG
