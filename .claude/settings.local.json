@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(///Mac/Home/Documents/VSCode/**)",
+      "Bash(mkdir:*)",
+      "Read(///Mac/Home/Documents/VSCode/md-heizung-landingpage/app/**)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(cmd /c \"cd \\\\\"\\\\\\\\Mac\\\\Home\\\\Documents\\\\VSCode\\\\md-heizung-landingpage\\\\\" && npx next build 2>&1\" 2>&1 | head -80)",
+      "Bash(npm run:*)",
+      "Bash(cmd /c \"pushd \\\\\\\\Mac\\\\Home\\\\Documents\\\\VSCode\\\\md-heizung-landingpage && npm run build 2>&1\")",
+      "Read(//c/Windows/Temp/**)",
+      "Bash(cmd /c \"pushd \\\\Mac\\\\Home\\\\Documents\\\\VSCode\\\\md-heizung-landingpage && npm run build 2>&1\")",
+      "Bash(cd:*)",
+      "Read(//c/Mac/Home/Documents/VSCode/md-heizung-landingpage/**)",
+      "Read(//c/Users/MICHAE~1/AppData/Local/Temp/claude/--Mac-Home-Documents-VSCode-md-heizung-landingpage/429eda8e-6b67-4f4b-91b1-71cba58ef8c6/tasks/**)",
+      "Bash(powershell -Command \"Get-Item 'Z:\\\\Documents\\\\VSCode\\\\md-heizung-landingpage\\\\app\\\\api\\\\contact\\\\route.ts' | Select-Object FullName, Mode, Length, Attributes\" 2>&1)"
+    ]
+  }
+}
