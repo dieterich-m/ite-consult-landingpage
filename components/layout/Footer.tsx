@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Col 1: Company */}
           <div>
             <div className="text-white font-bold text-xl mb-2">
-              <span className="text-accent font-mono">WB</span>{" "}
+              <span className="text-primary font-mono">ITE</span>{" "}
               {siteConfig.company.name}
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">

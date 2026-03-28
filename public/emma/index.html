@@ -678,82 +678,55 @@
     </section>
   </main>
 
-  <!-- Footer / Impressum -->
-  <footer id="impressum" class="bg-white border-t border-line">
-    <div class="mx-auto container-max px-5 py-12">
-      <div class="grid md:grid-cols-12 gap-10">
-        <div class="md:col-span-5">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-ink text-white flex items-center justify-center font-semibold" aria-hidden="true">ITE</div>
-            <div>
-              <p class="font-semibold">ITE Consult GmbH</p>
-              <p class="text-sm text-slate">Sargenroth · Automatisierung für öffentliche Verwaltungen & KMU</p>
-            </div>
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <!-- Col 1: Company -->
+        <div>
+          <div class="text-white font-bold text-xl mb-2">
+            <span class="text-sky-400 font-mono">ITE</span> ITE Consult GmbH
           </div>
-          <p class="mt-4 text-slate leading-relaxed">Wir helfen, Routinearbeit zu reduzieren und Prozesse stabil zu machen. Damit Menschen wieder Zeit haben für das, was Sinn stiftet.</p>
+          <p class="text-sm text-slate-400 leading-relaxed mb-4">Zeit für das Wesentliche.</p>
+          <p class="text-xs text-slate-500">Automatisierung und Digitalisierung mit Herz, Verstand und Verantwortung.</p>
         </div>
-
-        <div class="md:col-span-7">
-          <h3 class="font-serif text-2xl">Impressum</h3>
-
-          <div class="mt-4 space-y-4 text-slate">
-            <div>
-              <p class="font-semibold text-ink">Angaben gemäß § 5 DDG:</p>
-              <p>ITE Consult GmbH<br>
-                Hauptstraße 60<br>
-                55471 Sargenroth
-              </p>
-            </div>
-
-            <div>
-              <p class="font-semibold text-ink">Vertreten durch:</p>
-              <p>Michael Dieterich</p>
-            </div>
-
-            <div>
-              <p class="font-semibold text-ink">Kontakt:</p>
-              <p>Telefon: +49 175 185 3983<br>
-                E-Mail: <a class="text-accent hover:underline focus-ring rounded" href="mailto:michael.dieterich@ite-consult.de">michael.dieterich@ite-consult.de</a>
-              </p>
-            </div>
-
-            <div>
-              <p class="font-semibold text-ink">Registereintrag:</p>
-              <p>
-                Eintragung im Handelsregister:<br>
-                Registergericht: Amtsgericht Bad Kreuznach<br>
-                Registernummer: HRB 4367
-              </p>
-            </div>
-
-            <div>
-              <p class="font-semibold text-ink">Umsatzsteuer-ID:</p>
-              <p>
-                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
-                DE219143426
-              </p>
-            </div>
-
-          </div>
-
-          <div class="mt-8 flex flex-col sm:flex-row gap-3">
-            <a href="javascript:void(0)" data-netplans class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">Zum WebCast anmelden</a>
-            <a href="#content" class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist focus-ring">Nach oben</a>
-          </div>
+        <!-- Col 2: Leistungen -->
+        <div>
+          <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Leistungen</h3>
+          <ul class="space-y-2">
+            <li><a href="/leistungen/prozessanalyse-automatisierung" class="text-sm text-slate-400 hover:text-white transition-colors">Prozessanalyse</a></li>
+            <li><a href="/leistungen/automatisierungsberatung" class="text-sm text-slate-400 hover:text-white transition-colors">Automatisierungsberatung</a></li>
+            <li><a href="/leistungen/ki-backoffice-entlastung" class="text-sm text-slate-400 hover:text-white transition-colors">KI-gestützte Entlastung</a></li>
+            <li><a href="/leistungen/datenschutzsaubere-architektur" class="text-sm text-slate-400 hover:text-white transition-colors">Datenschutzsaubere Architektur</a></li>
+            <li><a href="/leistungen/potenzialanalyse" class="text-sm text-slate-400 hover:text-white transition-colors">Potenzialanalysen</a></li>
+            <li><a href="/leistungen/digitale-kundenstrecken" class="text-sm text-slate-400 hover:text-white transition-colors">Digitale Kundenstrecken</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Kontakt -->
+        <div>
+          <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Kontakt</h3>
+          <ul class="space-y-3">
+            <li><a href="tel:+491751853983" class="text-sm text-slate-400 hover:text-white transition-colors">+49 175 185 3983</a></li>
+            <li><a href="mailto:michael.dieterich@ite-consult.de" class="text-sm text-slate-400 hover:text-white transition-colors">michael.dieterich@ite-consult.de</a></li>
+            <li class="text-sm text-slate-400">Hauptstraße 60<br>55471 Sargenroth</li>
+            <li class="text-sm text-slate-400">Nach Vereinbarung</li>
+          </ul>
+        </div>
+        <!-- Col 4: Rechtliches -->
+        <div>
+          <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Rechtliches</h3>
+          <ul class="space-y-2">
+            <li><a href="/impressum/" class="text-sm text-slate-400 hover:text-white transition-colors">Impressum</a></li>
+            <li><a href="/datenschutz/" class="text-sm text-slate-400 hover:text-white transition-colors">Datenschutzerklärung</a></li>
+            <li><a href="/agb/" class="text-sm text-slate-400 hover:text-white transition-colors">AGB</a></li>
+            <li><a href="/kontakt/" class="text-sm text-slate-400 hover:text-white transition-colors">Kontakt</a></li>
+          </ul>
         </div>
       </div>
-
-      <!-- Bottom Footer Links -->
-      <div class="mt-10 pt-6 border-t border-line text-sm text-slate flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+      <!-- Bottom bar -->
+      <div class="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
         <p>© <span id="year"></span> ITE Consult GmbH. Alle Rechte vorbehalten.</p>
-
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <a href="/datenschutz/" class="text-accent hover:underline focus-ring rounded font-semibold">Datenschutz</a>
-          <a href="#impressum" class="text-accent hover:underline focus-ring rounded">Impressum</a>
-          <span class="hidden sm:inline text-slate/60">|</span>
-          <p class="text-slate/80">Tailwind via CDN</p>
-          <p class="text-slate/80">Version: <span class="font-mono">2026-03-03.11</span></p>
-        </div>
+        <p>55471 Sargenroth &bull; Hunsrück</p>
       </div>
     </div>
   </footer>
