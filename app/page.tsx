@@ -46,26 +46,6 @@ export default function HomePage() {
             <RevealOnScroll>
               <div className="border border-slate-200 p-6 md:p-8 flex flex-col h-full">
                 <h3 className="font-semibold text-slate-900 text-lg mb-3">
-                  EMMA live im Einsatz
-                </h3>
-                <p className="text-sm text-slate-500 leading-relaxed flex-1">
-                  Praxisnahe Einblicke in Automatisierung für KMU und Verwaltung – mit WebCast, Use Cases und konkreten Beispielen für Entlastung im Alltag.
-                </p>
-                <div className="mt-5">
-                  <Link
-                    href="/emma/"
-                    className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                  >
-                    Zur EMMA-Seite
-                    <ArrowRight className="h-3.5 w-3.5" />
-                  </Link>
-                </div>
-              </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll>
-              <div className="border border-slate-200 p-6 md:p-8 flex flex-col h-full">
-                <h3 className="font-semibold text-slate-900 text-lg mb-3">
                   Sind unsere Daten in der Cloud sicher?
                 </h3>
                 <p className="text-sm text-slate-500 leading-relaxed flex-1">

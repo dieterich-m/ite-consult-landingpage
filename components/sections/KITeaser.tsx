@@ -1,6 +1,7 @@
 import RevealOnScroll from "@/components/shared/RevealOnScroll";
 import { fadeLeft, fadeRight } from "@/lib/animations";
-import { Brain, Users, Sparkles } from "lucide-react";
+import Link from "next/link";
+import { Brain, Users, Sparkles, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default function KITeaser() {
@@ -43,6 +44,15 @@ export default function KITeaser() {
                     <p className="text-slate-500 text-sm">Automatisierung schafft Freiräume für Aufgaben mit mehr Wirkung.</p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-8">
+                <Link
+                  href="/emma/"
+                  className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                >
+                  EMMA live im Einsatz
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
               </div>
             </div>
           </RevealOnScroll>
