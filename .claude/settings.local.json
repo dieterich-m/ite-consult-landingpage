@@ -14,7 +14,17 @@
       "Bash(cd:*)",
       "Read(//c/Mac/Home/Documents/VSCode/md-heizung-landingpage/**)",
       "Read(//c/Users/MICHAE~1/AppData/Local/Temp/claude/--Mac-Home-Documents-VSCode-md-heizung-landingpage/429eda8e-6b67-4f4b-91b1-71cba58ef8c6/tasks/**)",
-      "Bash(powershell -Command \"Get-Item 'Z:\\\\Documents\\\\VSCode\\\\md-heizung-landingpage\\\\app\\\\api\\\\contact\\\\route.ts' | Select-Object FullName, Mode, Length, Attributes\" 2>&1)"
+      "Bash(powershell -Command \"Get-Item 'Z:\\\\Documents\\\\VSCode\\\\md-heizung-landingpage\\\\app\\\\api\\\\contact\\\\route.ts' | Select-Object FullName, Mode, Length, Attributes\" 2>&1)",
+      "Bash(git config:*)",
+      "Read(///Mac/Home/Documents/VSCode/emma-webcast-landingpage/**)",
+      "Read(///Mac/Home/Documents/VSCode/emma-webcast-landingpage/emma/**)",
+      "Bash(cp -r \"//Mac/Home/Documents/VSCode/emma-webcast-landingpage/emma\" \"//Mac/Home/Documents/VSCode/ite-consult-landingpage/public/emma\")",
+      "Bash(cp -r \"//Mac/Home/Documents/VSCode/emma-webcast-landingpage/datenschutz\" \"//Mac/Home/Documents/VSCode/ite-consult-landingpage/public/datenschutz\")",
+      "Read(///Mac/Home/Documents/VSCode/ite-consult-landingpage/public/**)",
+      "Bash(mkdir -p \"/Mac/Home/Documents/VSCode/ite-consult-landingpage/public/netplans-podcast\")",
+      "Bash(cp \"/Mac/Home/Documents/VSCode/netplans-podcast-landingpage/index.html\" \"/Mac/Home/Documents/VSCode/ite-consult-landingpage/public/netplans-podcast/index.html\")",
+      "Bash(New-Item -ItemType Directory -Path \"C:\\\\Mac\\\\Home\\\\Documents\\\\VSCode\\\\ite-consult-landingpage\\\\public\\\\netplans-podcast\" -Force)",
+      "Bash(Copy-Item \"C:\\\\Mac\\\\Home\\\\Documents\\\\VSCode\\\\netplans-podcast-landingpage\\\\index.html\" \"C:\\\\Mac\\\\Home\\\\Documents\\\\VSCode\\\\ite-consult-landingpage\\\\public\\\\netplans-podcast\\\\index.html\")"
     ]
   }
 }
