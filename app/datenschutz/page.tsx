@@ -177,8 +177,9 @@ export default function DatenschutzPage() {
               </p>
               <p className="mt-3">
                 Eine Weitergabe an externe Dienstleister erfolgt nur, soweit dies für den
-                Betrieb der Website oder die Bearbeitung Ihrer Anfrage erforderlich ist.
-                Diese werden auf Grundlage eines Vertrags zur Auftragsverarbeitung eingebunden.
+                Betrieb der Website oder die Bearbeitung Ihrer Anfrage erforderlich ist,
+                insbesondere an Hosting-, E-Mail- und IT-Dienstleister. Diese werden, soweit
+                erforderlich, auf Grundlage eines Vertrags zur Auftragsverarbeitung eingebunden.
               </p>
             </div>
 
