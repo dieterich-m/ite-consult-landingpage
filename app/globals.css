@@ -27,3 +27,16 @@
     @apply tracking-tight;
   }
 }
+
+/* Emma section utilities */
+.container-max { max-width: 1120px; }
+.text-ink { color: #0B1220; }
+.bg-ink { background-color: #0B1220; }
+.text-slate-em { color: #334155; }
+.bg-mist { background-color: #F6F7FB; }
+.border-line { border-color: #E6E8EF; }
+.shadow-soft { box-shadow: 0 20px 60px -30px rgba(11, 18, 32, 0.35); }
+.noise {
+  background-image: radial-gradient(rgba(11,18,32,.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
