@@ -1,233 +1,378 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Build/Version: 2026-03-26.2 -->
-  <meta name="ite-version" content="2026-03-26.2">
-
-  <title>Cloud Sicherheit im Mittelstand: Sind Daten in der Cloud sicher? | ITE Consult</title>
-  <meta name="description" content="Cloud Sicherheit im Mittelstand verständlich erklärt: Risiken, Maßnahmen und Praxis. Podcast-Empfehlung von ITE Consult mit Einordnung für KMU und Verwaltung." />
-
-  <link rel="canonical" href="https://www.ite-consult.de/netplans-podcast/" />
+  <title>Cloud-Sicherheit im Mittelstand | NetPlans Podcast-Empfehlung | ITE Consult</title>
+  <meta name="description" content="Cloud-Sicherheit im Mittelstand verständlich erklärt: praxisnahe Einordnung, konkrete Denkanstöße und Podcast-Empfehlung von NetPlans für Unternehmen und KMU." />
   <meta name="robots" content="index,follow" />
-
-  <meta property="og:title" content="Cloud Sicherheit im Mittelstand – verständlich erklärt" />
-  <meta property="og:description" content="Was bedeutet Cloud-Sicherheit wirklich für KMU? Praxisnahe Einordnung + Podcast-Empfehlung." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
-  <meta property="og:url" content="https://www.ite-consult.de/netplans-podcast/" />
-  <meta property="og:image" content="https://www.ite-consult.de/emma/og-emma.png" />
-
-  <link rel="icon" href="/emma/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/emma/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/emma/favicon-180.png">
-
+  <link rel="canonical" href="https://www.ite-consult.de/netplans-podcast/" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Helvetica','Arial','sans-serif'],
-            serif: ['ui-serif','Georgia','Cambria','Times New Roman','serif'],
-          },
-          colors: {
-            ink: '#0B1220',
-            slate: '#334155',
-            mist: '#F6F7FB',
-            line: '#E6E8EF',
-            accent: '#1D4ED8'
-          },
-          boxShadow: {
-            soft: '0 20px 60px -30px rgba(11, 18, 32, 0.35)',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="icon" type="image/png" href="/emma/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/emma/favicon.svg" />
+  <link rel="shortcut icon" href="/emma/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/emma/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ITE Consult" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cloud-Sicherheit im Mittelstand verständlich einordnen" />
+  <meta property="og:description" content="Praxisnahe Einordnung zur Frage, wie Unternehmen Cloud-Sicherheit realistisch bewerten sollten – ergänzt um eine Podcast-Empfehlung von NetPlans." />
+  <meta property="og:url" content="https://www.ite-consult.de/netplans-podcast/" />
+  <meta property="og:image" content="https://www.ite-consult.de/emma/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
-    html { scroll-behavior: smooth; }
-    .container-max { max-width: 1120px; }
-    .focus-ring:focus { outline: 3px solid rgba(29,78,216,.25); outline-offset: 2px; }
-    .noise { background-image: radial-gradient(rgba(11,18,32,.04) 1px, transparent 1px); background-size: 16px 16px; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+    .hero-glow {
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 35%),
+        radial-gradient(circle at top right, rgba(168, 85, 247, 0.14), transparent 30%),
+        linear-gradient(135deg, #eff6ff 0%, #f8fafc 45%, #eef2ff 100%);
+    }
   </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Cloud Sicherheit im Mittelstand: Sind Daten in der Cloud sicher?",
-    "url": "https://www.ite-consult.de/netplans-podcast/",
-    "isPartOf": {"@type":"WebSite","name":"ITE Consult GmbH","url":"https://www.ite-consult.de/"}
+    "@type": "Article",
+    "headline": "Cloud-Sicherheit im Mittelstand verständlich einordnen",
+    "description": "Praxisnahe Einordnung zur Frage, wie Unternehmen Cloud-Sicherheit realistisch bewerten sollten – ergänzt um eine Podcast-Empfehlung von NetPlans.",
+    "author": {
+      "@type": "Organization",
+      "name": "ITE Consult GmbH"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ITE Consult GmbH",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.ite-consult.de/emma/apple-touch-icon.png"
+      }
+    },
+    "mainEntityOfPage": "https://www.ite-consult.de/netplans-podcast/"
   }
   </script>
 </head>
-
-<body class="font-sans text-ink bg-white">
-  <header class="border-b border-line bg-white/70 backdrop-blur sticky top-0 z-50">
-    <div class="mx-auto container-max px-5 py-4 flex items-center justify-between gap-6">
-      <div class="flex items-center gap-3 shrink-0">
-        <div class="w-10 h-10 rounded-xl bg-ink text-white flex items-center justify-center font-semibold shadow-sm" aria-hidden="true">ITE</div>
-        <div class="leading-tight">
-          <p class="font-semibold">ITE Consult GmbH</p>
-          <p class="text-xs sm:text-sm text-slate">Podcast-Empfehlung · Cloud Sicherheit</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-3">
-        <a href="/emma/" class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-4 py-2 text-sm font-semibold hover:bg-mist focus-ring">Zur EMMA-Seite</a>
-      </div>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="sticky top-0 z-30 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
+      <a href="/" class="flex items-center gap-3 text-slate-900">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-sky-100 text-sky-700 font-bold">ITE</span>
+        <span>
+          <span class="block text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">ITE Consult</span>
+          <span class="block text-base font-semibold tracking-tight">Digitalisierung mit Herz und Verstand</span>
+        </span>
+      </a>
+      <nav class="hidden items-center gap-6 text-sm text-slate-600 md:flex">
+        <a href="/emma/" class="transition hover:text-slate-900">EMMA</a>
+        <a href="/emma/use-cases/" class="transition hover:text-slate-900">Use Cases</a>
+        <a href="/kontakt/" class="transition hover:text-slate-900">Kontakt</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="relative overflow-hidden">
-      <div class="absolute inset-0 noise" aria-hidden="true"></div>
-      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-100 blur-3xl opacity-70" aria-hidden="true"></div>
-      <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-slate-100 blur-3xl opacity-80" aria-hidden="true"></div>
-
-      <div class="relative mx-auto container-max px-5 pt-14 pb-12 md:pt-20 md:pb-16">
-        <div class="grid md:grid-cols-12 gap-10 items-center">
-          <div class="md:col-span-7">
-            <div class="rounded-3xl border border-line bg-white shadow-soft p-4 sm:p-5">
-              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                <div class="flex items-start gap-3">
-                  <div class="mt-0.5 w-9 h-9 rounded-2xl bg-accent text-white flex items-center justify-center font-bold" aria-hidden="true">P</div>
-                  <div>
-                    <p class="text-lg sm:text-2xl font-semibold text-ink leading-tight">NetPlans Podcast-Empfehlung</p>
-                    <p class="mt-1 text-base sm:text-lg font-semibold text-slate leading-snug">Cloud Sicherheit im Mittelstand verständlich erklärt</p>
-                    <p class="mt-1 text-sm text-slate">Folge 14 · Praxisnahe Einordnung für KMU und öffentliche Verwaltungen</p>
-                  </div>
-                </div>
-
-                <a href="https://www.netplans.de/podcast-folge-14-sind-unsere-daten-in-der-cloud-sicher/"
-                   target="_blank" rel="noopener"
-                   class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-5 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">
-                  Podcast direkt anhören
-                </a>
-              </div>
-            </div>
-
-            <h1 class="mt-5 font-serif text-4xl md:text-5xl leading-tight">
-              Sind unsere Daten in der Cloud sicher?
-              <span class="block text-slate">Eine der wichtigsten Fragen im Mittelstand.</span>
-            </h1>
-
-            <p class="mt-5 text-lg text-slate leading-relaxed">
-              Die kurze Antwort: <strong>Ja – wenn Cloud-Strukturen sauber aufgebaut sind.</strong>
-              In der Praxis geht es weniger um Schlagworte und mehr um Zugriffe, Prozesse, Verantwortlichkeiten und Transparenz.
-            </p>
-
-            <p class="mt-4 text-slate leading-relaxed">
-              Genau deshalb empfehle ich diese Podcast-Folge von NetPlans: Sie ordnet das Thema verständlich ein und hilft, die Diskussion
-              vom Bauchgefühl in eine sachliche Richtung zu bringen.
-            </p>
-
-            <div class="mt-8 flex flex-col sm:flex-row gap-3">
-              <a href="https://www.netplans.de/podcast-folge-14-sind-unsere-daten-in-der-cloud-sicher/"
-                 target="_blank" rel="noopener"
-                 class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">
-                Podcast-Folge öffnen
-              </a>
-              <a href="#einordnung"
-                 class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist focus-ring">
-                Meine Einordnung
-              </a>
-            </div>
-          </div>
-
-          <div class="md:col-span-5">
-            <div class="rounded-3xl border border-line bg-white p-7 shadow-soft">
-              <p class="text-sm text-slate">Direktlink zum Podcast</p>
-              <h2 class="mt-1 font-serif text-2xl">NetPlans Podcast – Folge 14</h2>
-              <p class="mt-3 text-slate leading-relaxed">
-                Titel: <strong>Sind unsere Daten in der Cloud sicher?</strong>
-              </p>
-
-              <div class="mt-6 rounded-2xl bg-mist p-5 border border-line">
-                <p class="text-sm text-slate">Jetzt anhören</p>
-                <a href="https://www.netplans.de/podcast-folge-14-sind-unsere-daten-in-der-cloud-sicher/"
-                   target="_blank" rel="noopener"
-                   class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-ink text-white px-5 py-3 font-semibold hover:opacity-95 focus-ring">
-                  Zur Podcast-Seite bei NetPlans
-                </a>
-                <p class="mt-3 text-xs text-slate">Externer Link zu NetPlans.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="einordnung" class="bg-white border-t border-line">
-      <div class="mx-auto container-max px-5 py-14 md:py-18">
-        <div class="grid md:grid-cols-12 gap-10 items-start">
-          <div class="md:col-span-7">
-            <h2 class="font-serif text-3xl md:text-4xl">Cloud Sicherheit im Mittelstand – worauf es wirklich ankommt</h2>
-            <p class="mt-4 text-slate text-lg leading-relaxed">
-              Entscheidend ist nicht, ob Cloud eingesetzt wird, sondern <strong>wie</strong>. Die größten Risiken entstehen selten durch die Cloud selbst,
-              sondern durch unklare Abläufe, fehlende Zugriffsregeln und manuelle Workarounds im Alltag.
-            </p>
-
-            <div class="mt-8 grid sm:grid-cols-2 gap-5">
-              <div class="rounded-3xl border border-line bg-mist p-6">
-                <p class="text-sm text-slate">Wichtig</p>
-                <p class="mt-1 font-semibold">Zugriffsrechte & Verantwortlichkeiten</p>
-                <p class="mt-2 text-slate">Wer sieht was? Wer darf was? Wer prüft Änderungen?</p>
-              </div>
-              <div class="rounded-3xl border border-line bg-mist p-6">
-                <p class="text-sm text-slate">Wichtig</p>
-                <p class="mt-1 font-semibold">Dokumentierte Prozesse</p>
-                <p class="mt-2 text-slate">Keine Schatten-IT, keine Zufallslösungen, keine stillen Workarounds.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="md:col-span-5">
-            <div class="rounded-3xl border border-line bg-white p-7 shadow-soft">
-              <h3 class="font-serif text-2xl">Typische Risiken</h3>
-              <ul class="mt-4 space-y-3 text-slate">
-                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Zu viele unkontrollierte Zugriffe</span></li>
-                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Unklare Datenablage</span></li>
-                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Fehlende Protokollierung</span></li>
-                <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-accent font-bold" aria-hidden="true">✓</span><span>Manuelle Workarounds im Alltag</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-mist border-t border-line">
-      <div class="mx-auto container-max px-5 py-14 md:py-18">
-        <div class="rounded-3xl border border-line bg-white p-7 shadow-soft">
-          <h2 class="font-serif text-3xl">Was hat das mit Automatisierung zu tun?</h2>
-          <p class="mt-4 text-slate text-lg leading-relaxed">
-            Stabil funktionierende Automatisierung braucht verlässliche Daten, klare Prozesse und nachvollziehbare Zuständigkeiten.
-            Ob Cloud oder On-Premise ist dabei zweitrangig – entscheidend ist die Struktur.
+    <section class="hero-glow overflow-hidden border-b border-slate-200">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+        <div>
+          <p class="inline-flex rounded-full border border-sky-200 bg-white/80 px-4 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-sky-700 shadow-sm">
+            NetPlans Podcast-Empfehlung
           </p>
-          <div class="mt-6 flex flex-col sm:flex-row gap-3">
-            <a href="/emma/" class="inline-flex items-center justify-center rounded-xl bg-accent text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95 focus-ring">Mehr zur Automatisierung mit EMMA</a>
-            <a href="https://www.netplans.de/podcast-folge-14-sind-unsere-daten-in-der-cloud-sicher/" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist focus-ring">Podcast anhören</a>
+          <h1 class="mt-6 max-w-4xl text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
+            Cloud-Sicherheit im Mittelstand verständlich einordnen
+          </h1>
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
+            Viele Unternehmen diskutieren Cloud noch zu pauschal. In der Praxis geht es um Zugriffe, Verantwortlichkeiten, Nachvollziehbarkeit, Wiederherstellung und tragfähige Prozesse. Genau hier setzt diese Seite an – ergänzt um eine konkrete Podcast-Empfehlung von NetPlans.
+          </p>
+          <p class="mt-6 max-w-3xl text-base leading-7 text-slate-600">
+            Diese Seite ist bewusst nicht als bloßer Link-Hinweis gedacht. Sie soll helfen, das Thema Cloud-Sicherheit für mittelständische Unternehmen greifbarer und nüchterner zu betrachten – jenseits von Schlagworten, Unsicherheit und Bauchgefühl.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <a href="https://www.netplans.de/ueber-uns/aktuelles/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-sky-600/20 transition hover:bg-sky-700">
+              Podcast-Folge direkt anhören
+            </a>
+            <a href="#einordnung" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50">
+              Einordnung lesen
+            </a>
+            <a href="/emma/" class="inline-flex items-center justify-center rounded-2xl border border-sky-200 bg-sky-50 px-6 py-3 text-base font-semibold text-sky-800 transition hover:bg-sky-100">
+              Mehr zu EMMA und Automatisierung
+            </a>
           </div>
-          <p class="mt-4 text-xs text-slate">Version: <span class="font-mono">2026-03-26.2</span></p>
+        </div>
+
+        <div class="lg:pl-6">
+          <div class="rounded-[2rem] border border-white/70 bg-white/80 p-8 shadow-xl shadow-slate-200/60 backdrop-blur">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Warum diese Seite Mehrwert bietet</p>
+            <div class="mt-6 space-y-5">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <h2 class="text-lg font-semibold text-slate-900">Kein bloßer Podcast-Hinweis</h2>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Die Seite ordnet das Thema Cloud-Sicherheit für Unternehmen fachlich ein und bleibt damit dauerhaft nutzbar.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <h2 class="text-lg font-semibold text-slate-900">Praxisbezug statt Schlagworte</h2>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Im Mittelpunkt stehen Zugriffe, Abläufe, Verantwortlichkeiten, Transparenz und Wiederherstellbarkeit.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <h2 class="text-lg font-semibold text-slate-900">Brücke zu Automatisierung</h2>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Saubere Daten- und Prozessstrukturen sind nicht nur für Sicherheit wichtig, sondern auch für stabile digitale Automatisierung.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="einordnung" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+      <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Einordnung</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+            Warum die Frage nach Cloud-Sicherheit oft zu ungenau gestellt wird
+          </h2>
+        </div>
+        <div class="space-y-5 text-lg leading-8 text-slate-700">
+          <p>
+            Wenn im Mittelstand über Cloud gesprochen wird, drehen sich viele Diskussionen zu schnell um die einfache Frage, ob Cloud grundsätzlich sicher oder unsicher sei. Genau an dieser Stelle beginnt häufig das eigentliche Missverständnis.
+          </p>
+          <p>
+            Entscheidend ist in der Praxis meist nicht nur der Ort der Datenhaltung. Entscheidend ist, ob Zugriffe sauber geregelt sind, ob Verantwortlichkeiten klar definiert wurden, ob Änderungen nachvollziehbar bleiben und ob Daten im Ernstfall verlässlich wiederhergestellt werden können.
+          </p>
+          <p>
+            Gerade in wachsenden Unternehmen entstehen Risiken oft dort, wo Prozesse historisch gewachsen sind, Freigaben uneinheitlich vergeben wurden oder Wissen an einzelnen Personen hängt. Wer Cloud-Sicherheit sinnvoll bewerten will, muss deshalb immer Technik, Organisation und Alltagspraxis gemeinsam betrachten.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Podcast-Empfehlung</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+            Eine gute erste Einordnung: der NetPlans Podcast zur Cloud-Sicherheit
+          </h2>
+          <div class="mt-6 space-y-5 text-lg leading-8 text-slate-700">
+            <p>
+              Wer sich dem Thema fundiert, aber ohne unnötige Komplexität nähern möchte, findet in der NetPlans Podcast-Folge „Sind unsere Daten in der Cloud sicher?" einen guten Einstieg. Die Folge eignet sich besonders für Unternehmen, die ihre eigene Situation besser einordnen möchten, ohne sofort in technische Details oder Produktvergleiche abzurutschen.
+            </p>
+            <p>
+              Die Stärke solcher Inhalte liegt nicht nur in der Frage nach der Plattform selbst, sondern darin, wie Sicherheit im Unternehmensalltag tatsächlich gedacht und umgesetzt werden sollte. Genau deshalb passt die Folge gut als Einstieg in ein Thema, das viele Unternehmen beschäftigt, aber oft noch zu abstrakt diskutiert wird.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <a href="https://www.netplans.de/ueber-uns/aktuelles/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800">
+              Podcast-Folge jetzt anhören
+            </a>
+          </div>
+          <p class="mt-5 text-sm leading-6 text-slate-500">
+            Die Empfehlung ist bewusst thematisch eingebettet. Nicht der Podcast allein steht im Vordergrund, sondern die Frage, was Unternehmen daraus für die eigene Praxis mitnehmen können.
+          </p>
+        </div>
+        <div>
+          <div class="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Für wen diese Folge besonders hilfreich ist</p>
+            <ul class="mt-6 space-y-4 text-base leading-7 text-slate-700">
+              <li class="rounded-2xl bg-white px-5 py-4 shadow-sm">Geschäftsführer und Inhaber im Mittelstand</li>
+              <li class="rounded-2xl bg-white px-5 py-4 shadow-sm">IT-Verantwortliche in KMU</li>
+              <li class="rounded-2xl bg-white px-5 py-4 shadow-sm">Kaufmännische Entscheider</li>
+              <li class="rounded-2xl bg-white px-5 py-4 shadow-sm">Verantwortliche für Organisation und Digitalisierung</li>
+              <li class="rounded-2xl bg-white px-5 py-4 shadow-sm">Datenschutzverantwortliche</li>
+              <li class="rounded-2xl bg-white px-5 py-4 shadow-sm">Unternehmen mit hybriden Strukturen zwischen lokaler IT und Cloud-Diensten</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+      <div class="max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Praxisrahmen</p>
+        <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+          Worauf es bei Cloud-Sicherheit in der Praxis wirklich ankommt
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-slate-700">
+          Cloud-Sicherheit entscheidet sich selten an einem einzelnen Produkt oder Anbieter. Maßgeblich ist, ob die grundlegenden Strukturen im Unternehmen sauber aufgebaut sind. Besonders wichtig sind aus meiner Sicht diese Punkte:
+        </p>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="text-xl font-semibold text-slate-900">Zugriffsrechte und Rollen</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">Wer darf lesen, ändern, freigeben, exportieren oder löschen? Sicherheit beginnt dort, wo Rollen sauber definiert sind. Viele Risiken entstehen nicht durch fehlende Technik, sondern durch zu breite Berechtigungen, gemeinsam genutzte Zugänge oder unklare Zuständigkeiten.</p>
+        </article>
+        <article class="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="text-xl font-semibold text-slate-900">Datenablage und Struktur</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">Wo liegen relevante Informationen tatsächlich? Wenn Daten über Mailpostfächer, persönliche Laufwerke, Freigaben und verschiedene Tools verteilt sind, entsteht Unsicherheit fast automatisch. Eine sichere Umgebung braucht Ordnung, Klarheit und einheitliche Ablagestrukturen.</p>
+        </article>
+        <article class="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="text-xl font-semibold text-slate-900">Nachvollziehbarkeit und Protokollierung</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">Kann nachvollzogen werden, wer wann was geändert oder freigegeben hat? Gerade bei sensiblen Informationen oder unter Compliance-Gesichtspunkten ist Transparenz ein zentrales Element. Ohne nachvollziehbare Änderungen entstehen Unsicherheiten, Reibung und Diskussionen.</p>
+        </article>
+        <article class="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="text-xl font-semibold text-slate-900">Backup und Wiederherstellung</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">Wie schnell lassen sich Daten und Arbeitsfähigkeit wiederherstellen? Die eigentliche Belastungsprobe zeigt sich oft erst im Störungsfall. Nicht nur die Sicherung, sondern die realistische Wiederherstellung im Alltag ist entscheidend.</p>
+        </article>
+        <article class="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="text-xl font-semibold text-slate-900">Abhängigkeit von Einzelpersonen</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">Funktioniert der Ablauf auch dann, wenn eine zentrale Person ausfällt? Viele Unternehmen unterschätzen, wie stark ihre digitale Arbeitsfähigkeit von einzelnen Mitarbeitern, deren Wissen oder individuellen Ablagen abhängt.</p>
+        </article>
+        <article class="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="text-xl font-semibold text-slate-900">Verbindung zu Prozessen und Automatisierung</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">Sind Daten und Abläufe so klar organisiert, dass darauf verlässlich aufgebaut werden kann? Wo Strukturen unsauber sind, werden auch Automatisierungen instabil. Sichere digitale Prozesse brauchen nachvollziehbare Datenflüsse und tragfähige Regeln.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-slate-900 text-slate-100">
+      <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-300">Missverständnisse</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-white md:text-4xl">
+            Typische Missverständnisse rund um Cloud-Sicherheit
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-slate-300">
+            Gerade im Mittelstand begegnen einem immer wieder ähnliche Fehleinschätzungen. Einige davon klingen plausibel, greifen in der Praxis aber zu kurz.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-7">
+            <h3 class="text-xl font-semibold text-white">On-Premise ist automatisch sicherer</h3>
+            <p class="mt-4 text-base leading-7 text-slate-300">Nicht der Serverstandort allein entscheidet über Sicherheit, sondern die Qualität von Zugriffssteuerung, Wartung, Updates, Backup und Verantwortlichkeiten.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-7">
+            <h3 class="text-xl font-semibold text-white">Cloud ist automatisch unsicher</h3>
+            <p class="mt-4 text-base leading-7 text-slate-300">Unsicherheit entsteht häufig dort, wo Freigaben, Prozesse und Datenstrukturen unklar bleiben. Das Problem liegt oft im Betrieb und nicht allein im Betriebsmodell.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-7">
+            <h3 class="text-xl font-semibold text-white">Sicherheit ist ein reines IT-Thema</h3>
+            <p class="mt-4 text-base leading-7 text-slate-300">In Wahrheit betrifft sie auch Organisation, Führung, Zuständigkeiten und Arbeitsdisziplin im Alltag.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-7">
+            <h3 class="text-xl font-semibold text-white">Ein gutes Tool löst das Problem</h3>
+            <p class="mt-4 text-base leading-7 text-slate-300">Technische Plattformen helfen nur dann wirklich, wenn Rollen, Prozesse und Datenpflege ebenfalls stimmen.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-7 md:col-span-2 xl:col-span-2">
+            <h3 class="text-xl font-semibold text-white">Solange nichts passiert ist, ist alles in Ordnung</h3>
+            <p class="mt-4 text-base leading-7 text-slate-300">Viele Schwächen werden erst sichtbar, wenn Berechtigungen geprüft, Informationen gesucht oder Ausfälle bewältigt werden müssen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+      <div class="grid gap-10 lg:grid-cols-[1fr_1fr]">
+        <article class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm lg:p-10">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Konkreter Nutzen</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900">Was Sie aus der Folge konkret mitnehmen können</h2>
+          <div class="mt-6 space-y-5 text-lg leading-8 text-slate-700">
+            <p>
+              Nach dem Anhören dieser Folge haben Sie eine bessere Grundlage, um interne Diskussionen sachlicher zu führen. Sie können typische Denkfehler leichter erkennen, den eigenen Status realistischer einordnen und gezielter prüfen, welche Voraussetzungen für eine tragfähige Cloud-Strategie in Ihrem Unternehmen tatsächlich wichtig sind.
+            </p>
+            <p>
+              Statt pauschaler Pro- oder Contra-Positionen entsteht damit ein klarerer Blick auf die eigentliche Frage: Sind unsere digitalen Abläufe so aufgestellt, dass Sicherheit, Stabilität und Transparenz im Alltag wirklich funktionieren?
+            </p>
+          </div>
+        </article>
+
+        <article class="rounded-[2rem] border border-sky-100 bg-sky-50 p-8 shadow-sm lg:p-10">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Einordnung aus Sicht von ITE Consult</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900">Sicherheit entsteht dort, wo Prozesse tragfähig werden</h2>
+          <div class="mt-6 space-y-5 text-lg leading-8 text-slate-700">
+            <p>
+              Cloud-Sicherheit ist für mich kein Marketingbegriff und auch keine reine Technikfrage. Entscheidend ist, ob Prozesse im Alltag sauber funktionieren, Zuständigkeiten nachvollziehbar geregelt sind und Informationen so organisiert werden, dass Transparenz, Kontrolle und Entlastung tatsächlich möglich werden.
+            </p>
+            <p>
+              Gerade im Mittelstand zeigt sich immer wieder: Die eigentlichen Probleme liegen selten nur in der Plattform. Sie liegen häufiger in unklaren Rollen, uneinheitlichen Ablagen, historisch gewachsenen Sonderwegen und fehlender Nachvollziehbarkeit. Wer diese Themen ernsthaft angeht, schafft nicht nur mehr Sicherheit, sondern zugleich bessere Voraussetzungen für stabile Digitalisierung und belastbare Automatisierung.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="border-y border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Brücke zu EMMA</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+            Cloud-Sicherheit und Automatisierung gehören zusammen
+          </h2>
+          <div class="mt-6 space-y-5 text-lg leading-8 text-slate-700">
+            <p>
+              Sobald Prozesse digitalisiert und automatisiert werden, steigt die Bedeutung sauberer Datenflüsse, klarer Verantwortlichkeiten und nachvollziehbarer Prozesslogik. Genau deshalb hängen die Themen Cloud-Sicherheit und Automatisierung eng zusammen.
+            </p>
+            <p>
+              Wer Automatisierung sinnvoll nutzen will, braucht eine Umgebung, in der Informationen verlässlich verfügbar, Berechtigungen sauber geregelt und Abläufe stabil aufgebaut sind. Erst dann entsteht der echte Nutzen: weniger Reibung, mehr Transparenz, weniger Fehler und mehr Entlastung im Tagesgeschäft.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <a href="/emma/" class="inline-flex items-center justify-center rounded-2xl bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-sky-600/20 transition hover:bg-sky-700">
+              Mehr zu EMMA und Automatisierung
+            </a>
+            <a href="/emma/use-cases/" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50">
+              Praxisnahe Einsatzbeispiele ansehen
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Weitere Inhalte von NetPlans</p>
+            <h3 class="mt-4 text-2xl font-bold tracking-tight text-slate-900">Mehr Beiträge, Podcast-Folgen und aktuelle Themen entdecken</h3>
+            <p class="mt-5 text-base leading-7 text-slate-700">
+              Wer neben dieser Podcast-Folge weitere Beiträge, Podcast-Episoden und aktuelle Themen von NetPlans entdecken möchte, findet auf der Übersichtsseite einen guten Einstieg. Dort werden neben Podcasts auch weitere Fachbeiträge, Events und aktuelle Themen veröffentlicht.
+            </p>
+            <a href="https://www.netplans.de/ueber-uns/aktuelles/" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800">
+              Weitere NetPlans-Inhalte entdecken
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+      <div class="rounded-[2.25rem] border border-slate-200 bg-gradient-to-br from-white via-sky-50 to-indigo-50 p-8 shadow-sm lg:p-12">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Abschluss</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+            Sie möchten das Thema für Ihr Unternehmen greifbarer machen?
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-slate-700">
+            Dann lohnt sich der nüchterne Blick auf Prozesse, Rollen, Datenflüsse und Verantwortlichkeiten. Genau dort zeigt sich, wie tragfähig Ihre digitale Arbeitsumgebung heute ist – und wo sich Sicherheit, Transparenz und Automatisierung sinnvoll verbessern lassen.
+          </p>
+        </div>
+        <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+          <a href="https://www.netplans.de/ueber-uns/aktuelles/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800">
+            Podcast jetzt anhören
+          </a>
+          <a href="/emma/" class="inline-flex items-center justify-center rounded-2xl bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-sky-600/20 transition hover:bg-sky-700">
+            Mehr zu EMMA und Automatisierung
+          </a>
+          <a href="/kontakt/" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50">
+            Kontakt aufnehmen
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-white border-t border-line">
-    <div class="mx-auto container-max px-5 py-10 text-sm text-slate flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
-      <p>© <span id="year"></span> ITE Consult GmbH</p>
-      <div class="flex items-center gap-4">
-        <a class="text-accent hover:underline focus-ring rounded" href="/emma/">EMMA</a>
-        <a class="text-accent hover:underline focus-ring rounded" href="/datenschutz/">Datenschutz</a>
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto grid max-w-7xl gap-8 px-6 py-10 lg:grid-cols-[1fr_auto] lg:px-8">
+      <div>
+        <p class="text-lg font-semibold text-slate-900">ITE Consult GmbH</p>
+        <p class="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
+          Praxisnahe Unterstützung für Digitalisierung, Automatisierung, Datenschutz und tragfähige Systemarchitektur im Mittelstand.
+        </p>
+      </div>
+      <div class="grid gap-3 text-sm text-slate-600">
+        <a href="/impressum/" class="transition hover:text-slate-900">Impressum</a>
+        <a href="/datenschutz/" class="transition hover:text-slate-900">Datenschutz</a>
+        <a href="/agb/" class="transition hover:text-slate-900">AGB</a>
+        <a href="/kontakt/" class="transition hover:text-slate-900">Kontakt</a>
+      </div>
+    </div>
+    <div class="border-t border-slate-200">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-5 text-sm text-slate-500 md:flex-row md:items-center md:justify-between lg:px-8">
+        <p>© 2026 ITE Consult GmbH</p>
+        <p>Version 2026-03-28.3</p>
       </div>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
