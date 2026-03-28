@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import CopyEmailButton from './_CopyEmailButton'
 
 export const metadata: Metadata = {
@@ -66,7 +67,9 @@ export default function EmmaPage() {
             </div>
             <div className="md:col-span-5">
               <div className="rounded-3xl border border-line bg-white shadow-soft p-6 md:p-7">
-                <img src="/emma/img/hero-tech.webp" alt="Digitale Automatisierung: Struktur, Klarheit und Tempo" className="w-full h-44 object-cover rounded-2xl border border-line" loading="eager" decoding="async" />
+                <div className="relative w-full h-44 rounded-2xl border border-line overflow-hidden">
+                  <Image src="/emma/img/hero-tech.webp" alt="Digitale Automatisierung: Struktur, Klarheit und Tempo" fill className="object-cover" priority />
+                </div>
                 <h2 className="mt-5 font-serif text-2xl">Was Sie im WebCast mitnehmen</h2>
                 <ul className="mt-4 space-y-3 text-slate-em">
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Wie EMMA kognitive Aufgaben und Routineprozesse stabil abarbeitet.</span></li>
@@ -140,7 +143,9 @@ export default function EmmaPage() {
             <p className="mt-4 text-slate-em text-lg leading-relaxed">EMMA ist eine kognitive KI, die wiederkehrende Tätigkeiten nicht nur automatisiert, sondern in der Praxis mitdenkt: Informationen finden, abgleichen, klassifizieren, dokumentieren und sauber protokollieren. Ziel ist nicht mehr Technik, sondern weniger Reibung im Alltag.</p>
           </div>
           <div className="mt-10">
-            <img src="/emma/img/emma-brain.webp" alt="Kognitive KI EMMA: Geschwindigkeit und Datenfluss" className="w-full h-60 md:h-72 object-cover rounded-3xl border border-line shadow-soft" loading="lazy" decoding="async" />
+            <div className="relative w-full h-60 md:h-72 rounded-3xl border border-line shadow-soft overflow-hidden">
+              <Image src="/emma/img/emma-brain.webp" alt="Kognitive KI EMMA: Geschwindigkeit und Datenfluss" fill className="object-cover" />
+            </div>
             <p className="mt-3 text-xs text-slate-em">Hinweis: Visualisierung (KI-generiert) zur Veranschaulichung von Datenfluss und Automatisierung.</p>
           </div>
           <div className="mt-10 grid md:grid-cols-3 gap-6">
