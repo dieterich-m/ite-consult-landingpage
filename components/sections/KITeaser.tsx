@@ -45,12 +45,19 @@ export default function KITeaser() {
                   </div>
                 </div>
               </div>
-              <div className="mt-8">
+              <div className="mt-8 flex flex-col gap-2">
                 <Link
                   href="/emma/"
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
                 >
                   EMMA live im Einsatz
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+                <Link
+                  href="/netplans-podcast/"
+                  className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                >
+                  Einordnung zur Cloud-Sicherheit im Mittelstand
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
               </div>
