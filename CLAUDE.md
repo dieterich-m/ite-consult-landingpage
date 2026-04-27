@@ -65,3 +65,23 @@ lib/
 - Branche & Inhalte: [docs/BRANCHE.md](docs/BRANCHE.md)
 - Design-System: [docs/DESIGNSYSTEM.md](docs/DESIGNSYSTEM.md)
 - Vollständige Spec: [docs/ANFORDERUNGEN.md](docs/ANFORDERUNGEN.md)
+
+---
+
+## WebCast-Terminpflege (NetPlans / EMMA)
+
+**Parallel dazu existiert** `emma-webcast-landingpage` (statisches HTML, separates Repo) — beide Repos bei WebCast-Updates synchron halten.
+
+Bei jedem neuen Termin diese Dateien aktualisieren:
+
+| Datei | Was ändern |
+|---|---|
+| `app/emma/page.tsx` | `NETPLANS_URL` + Hero-Card (Label, Datum, Titel, Details) |
+| `app/emma/termine/page.tsx` | `NETPLANS_URL` + `eventJsonLd` (name, startDate, endDate, location url, description) + Termin-Block |
+
+**Aktueller Termin (Stand 27.04.2026):**
+- Datum: Mittwoch, 20.05.2026 · 10:00–11:00 Uhr
+- Titel: NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung
+- URL: https://www.netplans.de/veranstaltungen/emma-im-einsatz-20-05-26/
+
+**Vergangene Events:** Seite + Sitemap-Eintrag + alle Links vollständig entfernen.
