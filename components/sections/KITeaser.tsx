@@ -60,6 +60,7 @@ export default function KITeaser() {
                   Einordnung zur Cloud-Sicherheit im Mittelstand
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
+
               </div>
             </div>
           </RevealOnScroll>
