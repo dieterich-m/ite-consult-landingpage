@@ -7,19 +7,19 @@ export const metadata: Metadata = {
 }
 
 const NETPLANS_URL =
-  'https://www.netplans.de/veranstaltungen/netplans-webcast-emma-im-einsatz-22-04-2026/'
+  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-20-05-26/'
 
 const eventJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Event',
-  name: 'NetPlans WebCast: EMMA (WIANCO) live im Einsatz',
+  name: 'NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung',
   eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
   eventStatus: 'https://schema.org/EventScheduled',
-  startDate: '2026-04-22T10:00:00+02:00',
-  endDate: '2026-04-22T11:00:00+02:00',
+  startDate: '2026-05-20T10:00:00+02:00',
+  endDate: '2026-05-20T11:00:00+02:00',
   location: {
     '@type': 'VirtualLocation',
-    url: 'https://www.netplans.de/veranstaltungen/netplans-webcast-emma-im-einsatz-22-04-2026/',
+    url: 'https://www.netplans.de/veranstaltungen/emma-im-einsatz-20-05-26/',
   },
   organizer: {
     '@type': 'Organization',
@@ -27,7 +27,7 @@ const eventJsonLd = {
     url: 'https://www.netplans.de/',
   },
   description:
-    'Kostenfreier WebCast: EMMA (WIANCO) live im Einsatz. Praxisbeispiele, typische Prozessmuster, Q&A.',
+    'Routineaufgaben kosten Zeit, Nerven und wertvolle Ressourcen. Im kostenfreien Live-Webcast zeigt NetPlans, wie moderne Organisationen mit EMMA Prozesse automatisieren, Fehler reduzieren und ihre Teams spürbar entlasten.',
 }
 
 export default function TerminePage() {
@@ -54,8 +54,10 @@ export default function TerminePage() {
         <div className="mx-auto container-max px-5 py-12">
           <div className="rounded-3xl border border-line bg-white shadow-soft p-7">
             <p className="text-sm text-slate-em">Nächster Termin</p>
-            <h2 className="mt-2 font-serif text-3xl">22. April 2026 · EMMA live im Einsatz</h2>
-            <p className="mt-3 text-slate-em leading-relaxed">Praxisbeispiele, typische Prozessmuster, Q&A. Für KMU und öffentliche Verwaltungen.</p>
+            <p className="mt-2 font-semibold text-slate-em">Mittwoch, 20.05.2026 · 10:00 bis 11:00 Uhr</p>
+            <h2 className="mt-1 font-serif text-3xl">NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung</h2>
+            <p className="mt-2 text-sm text-slate-em">Online · kostenlos</p>
+            <p className="mt-3 text-slate-em leading-relaxed">Routineaufgaben kosten Zeit, Nerven und wertvolle Ressourcen. Im kostenfreien Live-Webcast zeigt NetPlans, wie moderne Organisationen mit EMMA Prozesse automatisieren, Fehler reduzieren und ihre Teams spürbar entlasten.</p>
 
             <div className="mt-6 grid sm:grid-cols-3 gap-4">
               <div className="rounded-2xl border border-line bg-mist p-4">

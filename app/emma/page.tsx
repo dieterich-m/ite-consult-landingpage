@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const NETPLANS_URL =
-  'https://www.netplans.de/veranstaltungen/netplans-webcast-emma-im-einsatz-22-04-2026/'
+  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-20-05-26/'
 
 export default function EmmaPage() {
   return (
@@ -27,9 +27,10 @@ export default function EmmaPage() {
                   <div className="flex items-start gap-3">
                     <div className="mt-0.5 w-9 h-9 rounded-2xl bg-[#1D4ED8] text-white flex items-center justify-center font-bold" aria-hidden="true">WC</div>
                     <div>
-                      <p className="text-lg sm:text-4xl font-semibold text-ink leading-tight">NetPlans WebCast (alle 6 Wochen)</p>
-                      <p className="mt-1 text-base sm:text-lg font-semibold text-slate-em leading-snug">EMMA (WIANCO) live im Einsatz: Routinen raus, Zeit fürs Wesentliche</p>
-                      <p className="mt-1 text-sm text-slate-em">Kostenfrei teilnehmen · Praxisbeispiele für KMU & öffentliche Verwaltungen</p>
+                      <p className="text-sm text-slate-em">Nächster NetPlans WebCast</p>
+                      <p className="mt-1 text-lg font-semibold text-ink leading-tight">20. Mai 2026 · 10:00 Uhr</p>
+                      <p className="mt-1 text-base sm:text-lg font-semibold text-slate-em leading-snug">EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung</p>
+                      <p className="mt-1 text-sm text-slate-em">Online · kostenfrei · ca. 60 Minuten</p>
                       <div className="mt-3 flex flex-wrap gap-2">
                         <a href="/emma/termine/" className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-1.5 text-sm font-semibold text-ink hover:bg-mist">
                           <span className="w-2 h-2 rounded-full bg-[#1D4ED8]" aria-hidden="true"></span>
