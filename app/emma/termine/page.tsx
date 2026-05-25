@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 }
 
 const NETPLANS_URL =
-  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-20-05-26/'
+  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-24-06-26/'
 
 const eventJsonLd = {
   '@context': 'https://schema.org',
@@ -15,11 +15,11 @@ const eventJsonLd = {
   name: 'NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung',
   eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
   eventStatus: 'https://schema.org/EventScheduled',
-  startDate: '2026-05-20T10:00:00+02:00',
-  endDate: '2026-05-20T11:00:00+02:00',
+  startDate: '2026-06-24T10:00:00+02:00',
+  endDate: '2026-06-24T11:00:00+02:00',
   location: {
     '@type': 'VirtualLocation',
-    url: 'https://www.netplans.de/veranstaltungen/emma-im-einsatz-20-05-26/',
+    url: 'https://www.netplans.de/veranstaltungen/emma-im-einsatz-24-06-26/',
   },
   organizer: {
     '@type': 'Organization',
@@ -54,7 +54,7 @@ export default function TerminePage() {
         <div className="mx-auto container-max px-5 py-12">
           <div className="rounded-3xl border border-line bg-white shadow-soft p-7">
             <p className="text-sm text-slate-em">Nächster Termin</p>
-            <p className="mt-2 font-semibold text-slate-em">Mittwoch, 20.05.2026 · 10:00 bis 11:00 Uhr</p>
+            <p className="mt-2 font-semibold text-slate-em">Mittwoch, 24.06.2026 · 10:00 bis 11:00 Uhr</p>
             <h2 className="mt-1 font-serif text-3xl">NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung</h2>
             <p className="mt-2 text-sm text-slate-em">Online · kostenlos</p>
             <p className="mt-3 text-slate-em leading-relaxed">Routineaufgaben kosten Zeit, Nerven und wertvolle Ressourcen. Im kostenfreien Live-Webcast zeigt NetPlans, wie moderne Organisationen mit EMMA Prozesse automatisieren, Fehler reduzieren und ihre Teams spürbar entlasten.</p>
@@ -79,7 +79,7 @@ export default function TerminePage() {
               <a href="/emma/use-cases/" className="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist">Use Cases ansehen</a>
             </div>
 
-            <p className="mt-4 text-xs text-slate-em">Version: <span className="font-mono">2026-03-03.11</span></p>
+            <p className="mt-4 text-xs text-slate-em">Version: <span className="font-mono">2026-05-25.12</span></p>
           </div>
         </div>
       </section>
