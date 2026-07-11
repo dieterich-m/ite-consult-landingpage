@@ -125,9 +125,6 @@ export default function EmmaPage() {
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Wie kognitive KI diesen Bruch schließt – ohne große IT-Projekte.</span></li>
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Erste Schritte: welche Prozesse sich sofort lohnen.</span></li>
                 </ul>
-                <a href={NETPLANS_URL} className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-5 py-3 font-semibold shadow-soft hover:opacity-95">
-                  Zum WebCast anmelden
-                </a>
               </div>
             </div>
           </div>
@@ -155,9 +152,8 @@ export default function EmmaPage() {
               </ul>
               <h3 className="mt-8 font-semibold text-lg">Unser Prinzip</h3>
               <p className="mt-3 text-slate-em leading-relaxed"><strong>Erst verstehen – dann automatisieren.</strong> Wir starten pragmatisch: Prozess ansehen, Engpass finden, Prototyp bauen. In vielen Fällen sind in <strong>wenigen Tagen</strong> erste, funktionierende Entlastungen möglich.</p>
-              <div className="mt-6 flex flex-col sm:flex-row gap-3">
+              <div className="mt-6">
                 <a href="#faq" className="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist">Häufige Fragen ansehen</a>
-                <a href={NETPLANS_URL} className="inline-flex items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95">WebCast-Platz sichern</a>
               </div>
             </div>
             <div className="md:col-span-5">
@@ -320,7 +316,6 @@ export default function EmmaPage() {
                 <div className="mt-6 rounded-2xl bg-mist p-5 border border-line">
                   <p className="text-sm text-slate-em">Wenn Sie hier mehrfach nicken:</p>
                   <p className="mt-1 font-semibold">Dann ist der WebCast der beste erste Schritt.</p>
-                  <a href={NETPLANS_URL} className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-ink text-white px-5 py-3 font-semibold hover:opacity-95">Kostenfrei anmelden</a>
                 </div>
                 <p className="mt-4 text-xs text-slate-em">Tipp: Speichern Sie diese Seite als internes Briefing, damit Fachbereich und IT gleich sprechen.</p>
               </div>
@@ -352,8 +347,11 @@ export default function EmmaPage() {
                 <p className="mt-3 text-slate-em leading-relaxed">Starten Sie klein: Erst den WebCast ansehen, dann die passenden Prozesse identifizieren. Wenn Sie möchten, begleiten wir Sie bei Bewertung, Pilot und sauberer Umsetzung.</p>
                 <div className="mt-6 flex flex-col gap-3">
                   <a href={NETPLANS_URL} className="inline-flex items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95">Jetzt zum WebCast anmelden</a>
-                  <a href="mailto:michael.dieterich@ite-consult.de?subject=R%C3%BCckfrage%20zum%20NetPlans%20WebCast%20EMMA&body=Hallo%20Herr%20Dieterich%2C%0D%0A%0D%0Aich%20habe%20eine%20kurze%20R%C3%BCckfrage%20zum%20WebCast%20%2F%20EMMA%3A%0D%0A%0D%0A%5BMeine%20Frage%5D%0D%0A%0D%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen%0D%0A%5BName%5D" className="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist">Rückfrage an ITE Consult</a>
-                  <CopyEmailButton />
+                  <div className="rounded-xl border border-line bg-mist p-4">
+                    <p className="text-sm text-slate-em">Rückfrage an ITE Consult</p>
+                    <p className="mt-1 font-mono text-sm select-all">michael.dieterich@ite-consult.de</p>
+                    <CopyEmailButton />
+                  </div>
                 </div>
               </div>
             </div>
