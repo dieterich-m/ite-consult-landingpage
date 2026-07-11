@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const NETPLANS_URL =
-  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-24-06-26/'
+  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-12-08-26/'
 
 export default function EmmaPage() {
   return (
@@ -28,7 +28,7 @@ export default function EmmaPage() {
                     <div className="mt-0.5 w-9 h-9 rounded-2xl bg-[#1D4ED8] text-white flex items-center justify-center font-bold" aria-hidden="true">WC</div>
                     <div>
                       <p className="text-sm text-slate-em">Nächster NetPlans WebCast</p>
-                      <p className="mt-1 text-lg font-semibold text-ink leading-tight">24. Juni 2026 · 10:00 Uhr</p>
+                      <p className="mt-1 text-lg font-semibold text-ink leading-tight">12. August 2026 · 10:00 Uhr</p>
                       <p className="mt-1 text-base sm:text-lg font-semibold text-slate-em leading-snug">EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung</p>
                       <p className="mt-1 text-sm text-slate-em">Online · kostenfrei · ca. 60 Minuten</p>
                       <div className="mt-3 flex flex-wrap gap-2">
@@ -84,6 +84,41 @@ export default function EmmaPage() {
                   <a href={NETPLANS_URL} className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-ink text-white px-5 py-3 font-semibold hover:opacity-95">Zum NetPlans Formular</a>
                   <p className="mt-3 text-xs text-slate-em">Hinweis: Link führt direkt zum NetPlans-Anmeldeformular.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Podcast */}
+      <section id="podcast" className="bg-mist border-t border-line">
+        <div className="mx-auto container-max px-5 py-14 md:py-16">
+          <div className="grid md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-7">
+              <p className="text-sm font-semibold text-[#1D4ED8] uppercase tracking-wide">ITE Consult Podcast</p>
+              <h2 className="mt-2 font-serif text-3xl md:text-4xl leading-tight">Schluss mit digitalem Tipp-Ex – dank EMMA</h2>
+              <p className="mt-4 text-slate-em text-lg leading-relaxed">
+                Warum verschwindet Papier aus Büros, aber manuelle Dateneingabe bleibt? In dieser Episode sprechen wir darüber, wie EMMA wiederkehrende Aufgaben übernimmt – und was das konkret für Verwaltungen und KMU bedeutet.
+              </p>
+              <p className="mt-2 text-sm text-slate-em">ca. 26 Minuten · KI-generiert via NotebookLM · ITE Consult GmbH</p>
+              <div className="mt-6">
+                <audio controls preload="none" className="w-full rounded-xl" style={{ accentColor: '#1D4ED8' }}>
+                  <source src="/emma/podcast/schluss-mit-digitalem-tipp-ex-dank-emma.m4a" type="audio/mp4" />
+                  Dein Browser unterstützt kein Audio-Element.
+                </audio>
+              </div>
+            </div>
+            <div className="md:col-span-5">
+              <div className="rounded-3xl border border-line bg-white p-7 shadow-soft">
+                <h3 className="font-serif text-2xl">Was du mitnimmst</h3>
+                <ul className="mt-4 space-y-3 text-slate-em">
+                  <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Warum manuelle Dateneingabe trotz Digitalisierung noch immer dominiert.</span></li>
+                  <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Wie kognitive KI diesen Bruch schließt – ohne große IT-Projekte.</span></li>
+                  <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Erste Schritte: welche Prozesse sich sofort lohnen.</span></li>
+                </ul>
+                <a href={NETPLANS_URL} className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-5 py-3 font-semibold shadow-soft hover:opacity-95">
+                  Zum WebCast anmelden
+                </a>
               </div>
             </div>
           </div>
