@@ -74,32 +74,8 @@ export default function EmmaPage() {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="bg-white border-t border-line">
-        <div className="mx-auto container-max px-5 py-10 md:py-12">
-          <p className="text-sm text-slate-em text-center mb-8">Was EMMA in der Praxis erreicht — Quelle: WIANCO Best-Practice-Beispiele</p>
-          <div className="grid sm:grid-cols-3 gap-6">
-            <div className="rounded-2xl border border-line bg-mist p-6">
-              <p className="text-4xl font-serif font-semibold text-ink">20 Std.</p>
-              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Woche eingespart</p>
-              <p className="mt-3 text-slate-em text-sm leading-relaxed">Öffentliche Verwaltung: automatisierte Schreiben-Erstellung aus Excel, Fachverfahren und Webportalen.</p>
-            </div>
-            <div className="rounded-2xl border border-line bg-mist p-6">
-              <p className="text-4xl font-serif font-semibold text-ink">1.920 Std.</p>
-              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Jahr automatisiert</p>
-              <p className="mt-3 text-slate-em text-sm leading-relaxed">Privater Sektor: 1.500–2.000 E-Mails täglich aus dem CRM — gesichtet, bewertet, weitergeleitet, dokumentiert.</p>
-            </div>
-            <div className="rounded-2xl border border-line bg-mist p-6">
-              <p className="text-4xl font-serif font-semibold text-ink">ROI 320 %</p>
-              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">fast 6 Monate Vollzeit</p>
-              <p className="mt-3 text-slate-em text-sm leading-relaxed">E-Mail- & Dokumentenprozess im CRM: fast sechs Monate Vollzeitarbeit pro Jahr automatisiert.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Podcast */}
-      <section id="podcast" className="bg-mist border-t border-line">
+      <section id="podcast" className="bg-white border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-16">
           <div className="grid md:grid-cols-12 gap-8 items-start">
             <div className="md:col-span-7">
@@ -117,7 +93,7 @@ export default function EmmaPage() {
               </div>
             </div>
             <div className="md:col-span-5">
-              <div className="rounded-3xl border border-line bg-white p-7 shadow-soft">
+              <div className="rounded-3xl border border-line bg-mist p-7 shadow-soft">
                 <h3 className="font-serif text-2xl">Was du mitnimmst</h3>
                 <ul className="mt-4 space-y-3 text-slate-em">
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Warum manuelle Dateneingabe trotz Digitalisierung noch immer dominiert.</span></li>
@@ -125,6 +101,30 @@ export default function EmmaPage() {
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Erste Schritte: welche Prozesse sich sofort lohnen.</span></li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="bg-mist border-t border-line">
+        <div className="mx-auto container-max px-5 py-10 md:py-12">
+          <p className="text-sm text-slate-em text-center mb-8">Was EMMA in der Praxis erreicht — Quelle: WIANCO Best-Practice-Beispiele</p>
+          <div className="grid sm:grid-cols-3 gap-6">
+            <div className="rounded-2xl border border-line bg-white p-6">
+              <p className="text-4xl font-serif font-semibold text-ink">20 Std.</p>
+              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Woche eingespart</p>
+              <p className="mt-3 text-slate-em text-sm leading-relaxed">Öffentliche Verwaltung: automatisierte Schreiben-Erstellung aus Excel, Fachverfahren und Webportalen.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-white p-6">
+              <p className="text-4xl font-serif font-semibold text-ink">1.920 Std.</p>
+              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Jahr automatisiert</p>
+              <p className="mt-3 text-slate-em text-sm leading-relaxed">Privater Sektor: 1.500–2.000 E-Mails täglich aus dem CRM — gesichtet, bewertet, weitergeleitet, dokumentiert.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-white p-6">
+              <p className="text-4xl font-serif font-semibold text-ink">ROI 320 %</p>
+              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">fast 6 Monate Vollzeit</p>
+              <p className="mt-3 text-slate-em text-sm leading-relaxed">E-Mail- & Dokumentenprozess im CRM: fast sechs Monate Vollzeitarbeit pro Jahr automatisiert.</p>
             </div>
           </div>
         </div>
