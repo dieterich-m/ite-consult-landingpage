@@ -70,18 +70,19 @@ lib/
 
 ## WebCast-Terminpflege (NetPlans / EMMA)
 
-**Parallel dazu existiert** `emma-webcast-landingpage` (statisches HTML, separates Repo) — beide Repos bei WebCast-Updates synchron halten.
+**Dieses Repo ist die einzige Live-Quelle für www.ite-consult.de/emma.**
+`emma-webcast-landingpage` (statisches HTML) ist ein veralteter Prototyp — dort nichts mehr pflegen.
 
 Bei jedem neuen Termin diese Dateien aktualisieren:
 
 | Datei | Was ändern |
 |---|---|
-| `app/emma/page.tsx` | `NETPLANS_URL` + Hero-Card (Label, Datum, Titel, Details) |
-| `app/emma/termine/page.tsx` | `NETPLANS_URL` + `eventJsonLd` (name, startDate, endDate, location url, description) + Termin-Block |
+| `app/emma/page.tsx` | `NETPLANS_URL` + Hero-Card (Datum) |
+| `app/emma/termine/page.tsx` | `NETPLANS_URL` + `eventJsonLd` (startDate, endDate, location url) + Termin-Block (Datum, Titel) |
 
-**Aktueller Termin (Stand 25.05.2026):**
-- Datum: Mittwoch, 24.06.2026 · 10:00–11:00 Uhr
+**Aktueller Termin (Stand 11.07.2026):**
+- Datum: Mittwoch, 12.08.2026 · 10:00–11:00 Uhr
 - Titel: NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung
-- URL: https://www.netplans.de/veranstaltungen/emma-im-einsatz-24-06-26/
+- URL: https://www.netplans.de/veranstaltungen/emma-im-einsatz-12-08-26/
 
 **Vergangene Events:** Seite + Sitemap-Eintrag + alle Links vollständig entfernen.
