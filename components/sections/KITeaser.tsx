@@ -53,13 +53,15 @@ export default function KITeaser() {
                   EMMA live im Einsatz
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
-                <Link
-                  href="/netplans-podcast/"
+                <a
+                  href="https://www.netplans.de/podcast-folge-14-sind-unsere-daten-in-der-cloud-sicher/"
                   className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Einordnung zur Cloud-Sicherheit im Mittelstand
                   <ArrowRight className="h-3.5 w-3.5" />
-                </Link>
+                </a>
 
               </div>
             </div>
