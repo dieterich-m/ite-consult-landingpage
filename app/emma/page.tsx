@@ -75,7 +75,7 @@ export default function EmmaPage() {
       </section>
 
       {/* Podcast */}
-      <section id="podcast" className="bg-white border-t border-line">
+      <section id="podcast" className="bg-mist border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-16">
           <div className="grid md:grid-cols-12 gap-8 items-start">
             <div className="md:col-span-7">
@@ -93,7 +93,7 @@ export default function EmmaPage() {
               </div>
             </div>
             <div className="md:col-span-5">
-              <div className="rounded-3xl border border-line bg-mist p-7 shadow-soft">
+              <div className="rounded-3xl border border-line bg-white p-7 shadow-soft">
                 <h3 className="font-serif text-2xl">Was du mitnimmst</h3>
                 <ul className="mt-4 space-y-3 text-slate-em">
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Warum manuelle Dateneingabe trotz Digitalisierung noch immer dominiert.</span></li>
@@ -107,21 +107,21 @@ export default function EmmaPage() {
       </section>
 
       {/* Social Proof */}
-      <section className="bg-mist border-t border-line">
+      <section className="bg-white border-t border-line">
         <div className="mx-auto container-max px-5 py-10 md:py-12">
           <p className="text-sm text-slate-em text-center mb-8">Was EMMA in der Praxis erreicht — Quelle: WIANCO Best-Practice-Beispiele</p>
           <div className="grid sm:grid-cols-3 gap-6">
-            <div className="rounded-2xl border border-line bg-white p-6">
+            <div className="rounded-2xl border border-line bg-mist p-6">
               <p className="text-4xl font-serif font-semibold text-ink">20 Std.</p>
               <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Woche eingespart</p>
               <p className="mt-3 text-slate-em text-sm leading-relaxed">Öffentliche Verwaltung: automatisierte Schreiben-Erstellung aus Excel, Fachverfahren und Webportalen.</p>
             </div>
-            <div className="rounded-2xl border border-line bg-white p-6">
+            <div className="rounded-2xl border border-line bg-mist p-6">
               <p className="text-4xl font-serif font-semibold text-ink">1.920 Std.</p>
               <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Jahr automatisiert</p>
               <p className="mt-3 text-slate-em text-sm leading-relaxed">Privater Sektor: 1.500–2.000 E-Mails täglich aus dem CRM — gesichtet, bewertet, weitergeleitet, dokumentiert.</p>
             </div>
-            <div className="rounded-2xl border border-line bg-white p-6">
+            <div className="rounded-2xl border border-line bg-mist p-6">
               <p className="text-4xl font-serif font-semibold text-ink">ROI 320 %</p>
               <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">fast 6 Monate Vollzeit</p>
               <p className="mt-3 text-slate-em text-sm leading-relaxed">E-Mail- & Dokumentenprozess im CRM: fast sechs Monate Vollzeitarbeit pro Jahr automatisiert.</p>
@@ -131,7 +131,7 @@ export default function EmmaPage() {
       </section>
 
       {/* Impuls */}
-      <section id="impuls" className="bg-white border-t border-line">
+      <section id="impuls" className="bg-mist border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-18">
           <div className="grid md:grid-cols-12 gap-10 items-start">
             <div className="md:col-span-7">
@@ -176,7 +176,7 @@ export default function EmmaPage() {
       </section>
 
       {/* EMMA */}
-      <section id="emma" className="bg-mist border-t border-line">
+      <section id="emma" className="bg-white border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-18">
           <div className="max-w-3xl">
             <h2 className="font-serif text-3xl md:text-4xl leading-tight">EMMA von WIANCO: kognitive KI, die Routinen wirklich abnimmt</h2>
@@ -217,7 +217,7 @@ export default function EmmaPage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="bg-white border-t border-line">
+      <section id="faq" className="bg-mist border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-18">
           <div className="max-w-3xl">
             <h2 className="font-serif text-3xl md:text-4xl">FAQ: EMMA, WebCast und Einstieg</h2>
@@ -288,7 +288,7 @@ export default function EmmaPage() {
       </section>
 
       {/* WebCast */}
-      <section id="webcast" className="bg-mist border-t border-line">
+      <section id="webcast" className="bg-white border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-18">
           <div className="grid md:grid-cols-12 gap-10 items-start">
             <div className="md:col-span-7">
@@ -324,7 +324,7 @@ export default function EmmaPage() {
       </section>
 
       {/* Warum */}
-      <section id="warum" className="bg-white border-t border-line">
+      <section id="warum" className="bg-mist border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-18">
           <div className="grid md:grid-cols-12 gap-10 items-start">
             <div className="md:col-span-7">
