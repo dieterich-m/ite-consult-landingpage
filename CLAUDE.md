@@ -68,6 +68,68 @@ lib/
 
 ---
 
+## Seitenstruktur Hauptseite (Stand 11.07.2026)
+
+Reihenfolge und Hintergrundfarben der Sections auf `app/page.tsx`:
+
+| # | Component | Hintergrund |
+|---|---|---|
+| 1 | HeroSection | `bg-white` |
+| 2 | ProjectsTeaser – Unser Projekt | `bg-white` |
+| 3 | ProjectsTeaser – Unsere Partner (Slider) | `bg-slate-50` |
+| 4 | TrustBar | `bg-primary` |
+| 5 | ServicesGrid | `bg-white` |
+| 6 | KITeaser | `bg-[#eef6ff]` |
+| 7 | AboutTeaser | `bg-slate-50` |
+| 8 | LeadMagnet | `bg-primary` |
+| 9 | Testimonials | `bg-white` *(ausgeblendet bis reviewCount > 0)* |
+| 10 | ServiceArea | `bg-slate-50` |
+| 11 | FaqSection | `bg-white` |
+| 12 | Kontakt (inline) | `bg-slate-50` |
+| 13 | CtaBanner | `bg-primary` |
+
+---
+
+## ProjectsTeaser (`components/sections/ProjectsTeaser.tsx`)
+
+Enthält zwei separate `<section>`-Elemente (Fragment):
+
+**Unser Projekt (bg-white):**
+- Medizin- und RehaShop → https://medizin-rehashop.de/
+- Logo: `public/medizin-rehashop-logo.png` (300×60 PNG, lokal)
+
+**Unsere Partner – Slider (bg-slate-50):**
+- NetPlans GmbH → https://www.netplans.de/ · Logo: `public/netplans-logo.svg`
+- RCN Medizin- und Rehatechnik GmbH → https://rcn-medizin.de/ · Logo: `public/rcn-logo.png`
+- Slider: Framer Motion, auto-advance 5s, Pfeil-Buttons + Dots
+
+---
+
+## Konfiguration / Bekannte Fixes (Stand 11.07.2026)
+
+- `radiusKm` aus `lib/config.ts` **entfernt** (war 0, ServiceArea zeigt jetzt `serviceRadius` = "deutschlandweit")
+- `Testimonials` rendert `null` wenn `socialProof.reviewCount === 0` (verhindert "5 Sterne / 0 Bewertungen")
+- `KITeaser`: Link auf `/netplans-podcast/` → direkt auf `https://www.netplans.de/podcast-folge-14-sind-unsere-daten-in-der-cloud-sicher/`
+- `next.config.ts`: 301-Redirect `/netplans-podcast/:path*` → NetPlans Podcast-URL
+- Footer: Spalte "Projekte" mit Link auf medizin-rehashop.de (über "Rechtliches")
+- Header/Footer: ITE-Dopplung behoben (hardcoded "Consult GmbH" statt `siteConfig.company.name`)
+
+---
+
+## Farbtöne (für Abstimmung mit Partnerprojekten)
+
+| Verwendung | Tailwind | Hex |
+|---|---|---|
+| Heller Seitenhintergrund | `bg-slate-50` | `#f8fafc` |
+| Weißer Hintergrund | `bg-white` | `#ffffff` |
+| Trennlinien | `border-slate-200` | `#e2e8f0` |
+| Primärblau | `bg-primary` | `#2563eb` |
+| EMMA-Hintergrund | `bg-mist` | `#F6F7FB` |
+| EMMA-Trennlinie | `border-line` | `#E6E8EF` |
+| EMMA-Dunkel | `bg-ink` | `#0B1220` |
+
+---
+
 ## WebCast-Terminpflege (NetPlans / EMMA)
 
 **Dieses Repo ist die einzige Live-Quelle für www.ite-consult.de/emma.**
