@@ -16,6 +16,26 @@ const projects = [
     description:
       "Onlineshop für hochwertige Reha- und Pflegeprodukte — betrieben von ITE Consult in Partnerschaft mit RCN Medizin- und Rehatechnik GmbH.",
   },
+  {
+    logo: "/netplans-logo.svg",
+    logoWidth: 180,
+    logoHeight: 80,
+    name: "NetPlans GmbH",
+    url: "https://www.netplans.de/",
+    urlLabel: "netplans.de",
+    description:
+      "Full-Service-IT-Systemhaus für den Mittelstand. Partner von ITE Consult für den EMMA WebCast und Cloud-Lösungen.",
+  },
+  {
+    logo: "/rcn-logo.png",
+    logoWidth: 180,
+    logoHeight: 36,
+    name: "RCN Medizin- und Rehatechnik GmbH",
+    url: "https://rcn-medizin.de/",
+    urlLabel: "rcn-medizin.de",
+    description:
+      "Hersteller hochwertiger Reha- und Medizinprodukte. Fertigungspartner des Medizin- und RehaShops, betrieben durch ITE Consult.",
+  },
 ];
 
 export default function ProjectsTeaser() {
