@@ -4,6 +4,8 @@ import { Star } from "lucide-react";
 import TestimonialsGrid from "./TestimonialsGrid";
 
 export default function Testimonials() {
+  if (siteConfig.socialProof.reviewCount === 0) return null;
+
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

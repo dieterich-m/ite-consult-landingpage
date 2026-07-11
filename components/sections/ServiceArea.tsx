@@ -9,12 +9,11 @@ export default function ServiceArea() {
         <RevealOnScroll className="text-center mb-8">
           <MapPin className="h-8 w-8 text-accent mx-auto mb-3" />
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
-            Im Hunsrück für Sie da
+            Deutschlandweit tätig
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto">
-            Wir sind im Umkreis von {siteConfig.company.radiusKm} km um{" "}
-            {siteConfig.company.address.city} tätig. Sprechen Sie uns auch bei
-            Standorten außerhalb an.
+            Wir arbeiten {siteConfig.company.serviceRadius} – mit Standort in{" "}
+            {siteConfig.company.region} und Projekten in ganz Deutschland.
           </p>
         </RevealOnScroll>
 
@@ -33,7 +32,7 @@ export default function ServiceArea() {
         <RevealOnScroll className="mt-8 text-center">
           <p className="text-xs text-slate-400">
             Hauptstandort: {siteConfig.company.address.full} &bull;{" "}
-            Servicegebiet: ca. {siteConfig.company.radiusKm} km Umkreis
+            Servicegebiet: {siteConfig.company.serviceRadius}
           </p>
         </RevealOnScroll>
       </div>
