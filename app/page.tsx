@@ -3,6 +3,7 @@ import TrustBar from "@/components/sections/TrustBar";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import AboutTeaser from "@/components/sections/AboutTeaser";
 import KITeaser from "@/components/sections/KITeaser";
+import ProjectsTeaser from "@/components/sections/ProjectsTeaser";
 import LeadMagnet from "@/components/sections/LeadMagnet";
 import Testimonials from "@/components/sections/Testimonials";
 import ServiceArea from "@/components/sections/ServiceArea";
@@ -21,6 +22,7 @@ export default function HomePage() {
       <ServicesGrid />
       <KITeaser />
       <AboutTeaser />
+      <ProjectsTeaser />
       <LeadMagnet />
       <Testimonials />
       <ServiceArea />

@@ -80,8 +80,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Legal */}
+          {/* Col 4: Projekte + Legal */}
           <div>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              Projekte
+            </h3>
+            <ul className="space-y-2 mb-6">
+              <li>
+                <a
+                  href="https://medizin-rehashop.de/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  Medizin- und RehaShop
+                </a>
+              </li>
+            </ul>
             <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               Rechtliches
             </h3>
