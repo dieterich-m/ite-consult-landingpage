@@ -1,148 +1,108 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import RevealOnScroll from "@/components/shared/RevealOnScroll";
 import Image from "next/image";
-import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
-
-const projects = [
-  {
-    logo: "/medizin-rehashop-logo.png",
-    logoWidth: 180,
-    logoHeight: 36,
-    name: "Medizin- und RehaShop",
-    url: "https://medizin-rehashop.de/",
-    urlLabel: "medizin-rehashop.de",
-    description:
-      "Onlineshop für hochwertige Reha- und Pflegeprodukte — betrieben von ITE Consult in Partnerschaft mit RCN Medizin- und Rehatechnik GmbH.",
-  },
-  {
-    logo: "/netplans-logo.svg",
-    logoWidth: 180,
-    logoHeight: 80,
-    name: "NetPlans GmbH",
-    url: "https://www.netplans.de/",
-    urlLabel: "netplans.de",
-    description:
-      "Full-Service-IT-Systemhaus für den Mittelstand. Partner von ITE Consult für den EMMA WebCast und Cloud-Lösungen.",
-  },
-  {
-    logo: "/rcn-logo.png",
-    logoWidth: 180,
-    logoHeight: 36,
-    name: "RCN Medizin- und Rehatechnik GmbH",
-    url: "https://rcn-medizin.de/",
-    urlLabel: "rcn-medizin.de",
-    description:
-      "Hersteller hochwertiger Reha- und Medizinprodukte. Fertigungspartner des Medizin- und RehaShops, betrieben durch ITE Consult.",
-  },
-];
+import { ArrowUpRight } from "lucide-react";
 
 export default function ProjectsTeaser() {
-  const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
-
-  const count = projects.length;
-
-  useEffect(() => {
-    if (count < 2) return;
-    const timer = setInterval(() => {
-      setDirection(1);
-      setIndex((i) => (i + 1) % count);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [count]);
-
-  const go = (dir: number) => {
-    setDirection(dir);
-    setIndex((i) => (i + dir + count) % count);
-  };
-
-  const project = projects[index];
-
   return (
     <section className="bg-slate-50 border-t border-slate-200 py-12 md:py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="mb-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-10">
+
+        {/* Projekt */}
+        <RevealOnScroll>
           <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">
-            Unsere Projekte
+            Unser Projekt
           </p>
-          <h2 className="text-xl md:text-2xl font-bold text-slate-900">
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-5">
             Digitalisierung, die wir selbst betreiben
           </h2>
-        </div>
+          <a
+            href="https://medizin-rehashop.de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-white border border-slate-200 p-6 md:p-8 hover:border-primary/40 hover:shadow-md transition-all max-w-2xl"
+          >
+            <div className="shrink-0 bg-white rounded-lg border border-slate-100 p-4 flex items-center justify-center">
+              <Image
+                src="/medizin-rehashop-logo.png"
+                alt="Medizin- und RehaShop"
+                width={180}
+                height={36}
+                className="object-contain"
+              />
+            </div>
+            <div className="flex-1 min-w-0 text-center sm:text-left">
+              <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
+                <h3 className="text-base font-bold text-slate-900">Medizin- und RehaShop</h3>
+                <ArrowUpRight className="h-4 w-4 text-slate-400 group-hover:text-primary transition-colors shrink-0" />
+              </div>
+              <p className="text-sm text-slate-500 mb-2">medizin-rehashop.de</p>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Onlineshop für hochwertige Reha- und Pflegeprodukte — betrieben von ITE Consult
+                in Partnerschaft mit RCN Medizin- und Rehatechnik GmbH.
+              </p>
+            </div>
+          </a>
+        </RevealOnScroll>
 
-        <div className="relative max-w-2xl">
-          <AnimatePresence mode="wait" custom={direction}>
-            <motion.a
-              key={index}
-              href={project.url}
+        {/* Partner */}
+        <RevealOnScroll>
+          <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">
+            Unsere Partner
+          </p>
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-5">
+            Starke Netzwerke für unsere Kunden
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+            <a
+              href="https://www.netplans.de/"
               target="_blank"
               rel="noopener noreferrer"
-              custom={direction}
-              initial={{ opacity: 0, x: direction * 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: direction * -40 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-white border border-slate-200 p-6 md:p-8 hover:border-primary/40 hover:shadow-md transition-colors"
+              className="group flex flex-col items-center gap-4 bg-white border border-slate-200 p-6 hover:border-primary/40 hover:shadow-md transition-all"
             >
-              {/* Logo */}
-              <div className="shrink-0 bg-white rounded-lg border border-slate-100 p-4 flex items-center justify-center">
+              <div className="bg-white border border-slate-100 p-3 flex items-center justify-center w-full">
                 <Image
-                  src={project.logo}
-                  alt={project.name}
-                  width={project.logoWidth}
-                  height={project.logoHeight}
+                  src="/netplans-logo.svg"
+                  alt="NetPlans GmbH"
+                  width={160}
+                  height={72}
                   className="object-contain"
                 />
               </div>
-
-              {/* Text */}
-              <div className="flex-1 min-w-0 text-center sm:text-left">
-                <div className="flex items-center justify-center sm:justify-start gap-2 mb-2">
-                  <h3 className="text-base font-bold text-slate-900">
-                    {project.name}
-                  </h3>
-                  <ArrowUpRight className="h-4 w-4 text-slate-400 group-hover:text-primary transition-colors shrink-0" />
+              <div className="text-center">
+                <div className="flex items-center justify-center gap-1 mb-1">
+                  <h3 className="text-sm font-bold text-slate-900">NetPlans GmbH</h3>
+                  <ArrowUpRight className="h-3.5 w-3.5 text-slate-400 group-hover:text-primary transition-colors" />
                 </div>
-                <p className="text-sm text-slate-500 mb-2">{project.urlLabel}</p>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  {project.description}
-                </p>
+                <p className="text-xs text-slate-500">netplans.de</p>
               </div>
-            </motion.a>
-          </AnimatePresence>
+            </a>
 
-          {/* Controls — only shown when multiple slides */}
-          {count > 1 && (
-            <div className="flex items-center gap-3 mt-4">
-              <button
-                onClick={() => go(-1)}
-                className="p-1.5 rounded-full border border-slate-200 hover:border-primary/40 hover:text-primary transition-colors text-slate-500"
-                aria-label="Vorheriges Projekt"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </button>
-              <div className="flex gap-1.5">
-                {projects.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => { setDirection(i > index ? 1 : -1); setIndex(i); }}
-                    className={`h-1.5 rounded-full transition-all ${i === index ? "w-4 bg-primary" : "w-1.5 bg-slate-300"}`}
-                    aria-label={`Projekt ${i + 1}`}
-                  />
-                ))}
+            <a
+              href="https://rcn-medizin.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col items-center gap-4 bg-white border border-slate-200 p-6 hover:border-primary/40 hover:shadow-md transition-all"
+            >
+              <div className="bg-white border border-slate-100 p-3 flex items-center justify-center w-full">
+                <Image
+                  src="/rcn-logo.png"
+                  alt="RCN Medizin- und Rehatechnik GmbH"
+                  width={160}
+                  height={32}
+                  className="object-contain"
+                />
               </div>
-              <button
-                onClick={() => go(1)}
-                className="p-1.5 rounded-full border border-slate-200 hover:border-primary/40 hover:text-primary transition-colors text-slate-500"
-                aria-label="Nächstes Projekt"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
-          )}
-        </div>
+              <div className="text-center">
+                <div className="flex items-center justify-center gap-1 mb-1">
+                  <h3 className="text-sm font-bold text-slate-900">RCN Medizin- und Rehatechnik GmbH</h3>
+                  <ArrowUpRight className="h-3.5 w-3.5 text-slate-400 group-hover:text-primary transition-colors" />
+                </div>
+                <p className="text-xs text-slate-500">rcn-medizin.de</p>
+              </div>
+            </a>
+          </div>
+        </RevealOnScroll>
+
       </div>
     </section>
   );
