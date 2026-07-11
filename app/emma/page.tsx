@@ -266,7 +266,7 @@ export default function EmmaPage() {
                   <span className="text-slate-em group-open:rotate-45 transition" aria-hidden="true">+</span>
                 </summary>
                 <p className="mt-3 text-slate-em leading-relaxed">Starte mit dem WebCast und einem klaren Prozess-Scope. Danach prüfen wir gemeinsam Datenflüsse, Zugriffsrechte, Protokollierung und die passende Systemarchitektur – pragmatisch und umsetzbar.</p>
-                <p className="mt-2 text-slate-em leading-relaxed">Weiterführend: <a href="/netplans-podcast/" className="text-[#1D4ED8] hover:underline">Wie sicher sind Daten in der Cloud?</a></p>
+                <p className="mt-2 text-slate-em leading-relaxed">Weiterführend: <a href="https://www.netplans.de/podcast-folge-14-sind-unsere-daten-in-der-cloud-sicher/" className="text-[#1D4ED8] hover:underline" target="_blank" rel="noopener">Wie sicher sind Daten in der Cloud? (NetPlans Podcast)</a></p>
               </details>
               <details className="group rounded-2xl border border-line bg-white p-5">
                 <summary className="cursor-pointer list-none font-semibold flex items-center justify-between gap-4">
