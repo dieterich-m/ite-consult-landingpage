@@ -66,7 +66,7 @@ export default function ProjectsTeaser() {
             href="https://medizin-rehashop.de/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-white border border-slate-200 p-6 md:p-8 hover:border-primary/40 hover:shadow-md transition-all max-w-2xl"
+            className="group flex flex-col sm:flex-row items-center sm:items-start gap-6 bg-white border border-slate-200 p-6 md:p-8 hover:border-primary/40 hover:shadow-md transition-all w-full"
           >
             <div className="shrink-0 bg-white rounded-lg border border-slate-100 p-4 flex items-center justify-center">
               <Image
@@ -104,7 +104,7 @@ export default function ProjectsTeaser() {
               Starke Netzwerke für unsere Kunden
             </h2>
 
-            <div className="relative max-w-2xl">
+            <div className="relative w-full">
               <AnimatePresence mode="wait" custom={direction}>
                 <motion.a
                   key={index}
