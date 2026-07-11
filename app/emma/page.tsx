@@ -51,19 +51,10 @@ export default function EmmaPage() {
                 <span className="block text-slate-em">Freiheit durch Automatisierung mit EMMA.</span>
               </h1>
               <p className="mt-4 text-base md:text-lg text-slate-em leading-relaxed">
-                <strong>RPA und kognitive KI</strong> für <strong>öffentliche Verwaltungen</strong> und <strong>KMU</strong>: Routinen automatisieren, Fehler reduzieren, Durchlaufzeiten verkürzen – und Zeit für das Wesentliche gewinnen.
+                Kognitive KI für <strong>öffentliche Verwaltungen</strong> und <strong>KMU</strong>: EMMA übernimmt Routinen verlässlich – und schafft Raum für Arbeit, die wirklich zählt.
               </p>
-              <p className="mt-5 text-lg text-slate-em leading-relaxed">
-                Repetitive Aufgaben binden Energie, Aufmerksamkeit und Motivation. EMMA übernimmt Routinen verlässlich und schafft Raum für Arbeit, die Sinn stiftet: für bessere Entscheidungen, echte Kommunikation und spürbare Wirkung.
-              </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <div className="mt-8">
                 <a href={NETPLANS_URL} className="inline-flex items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95">Jetzt kostenfrei anmelden</a>
-                <a href="#emma" className="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist">Erst verstehen, dann starten</a>
-              </div>
-              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <div className="rounded-2xl border border-line bg-white p-4"><p className="text-sm text-slate-em">Nutzen</p><p className="mt-1 font-semibold">Entlastung im Alltag</p></div>
-                <div className="rounded-2xl border border-line bg-white p-4"><p className="text-sm text-slate-em">Wirkung</p><p className="mt-1 font-semibold">Weniger Fehler, mehr Kontrolle</p></div>
-                <div className="rounded-2xl border border-line bg-white p-4"><p className="text-sm text-slate-em">Ergebnis</p><p className="mt-1 font-semibold">Zeitgewinn fürs Wesentliche</p></div>
               </div>
             </div>
             <div className="md:col-span-5">
@@ -78,12 +69,6 @@ export default function EmmaPage() {
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Welche Stolpersteine es gibt und wie man sie pragmatisch vermeidet.</span></li>
                   <li className="flex gap-3"><span className="mt-1 w-5 h-5 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8] font-bold" aria-hidden="true">✓</span><span>Wie aus Automatisierung echte Entlastung wird: messbar, protokolliert, nachvollziehbar.</span></li>
                 </ul>
-                <div className="mt-6 rounded-2xl bg-mist p-4 border border-line">
-                  <p className="text-sm text-slate-em">Anmeldung</p>
-                  <p className="mt-1 font-semibold">Kostenfrei, in wenigen Klicks</p>
-                  <a href={NETPLANS_URL} className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-ink text-white px-5 py-3 font-semibold hover:opacity-95">Zum NetPlans Formular</a>
-                  <p className="mt-3 text-xs text-slate-em">Hinweis: Link führt direkt zum NetPlans-Anmeldeformular.</p>
-                </div>
               </div>
             </div>
           </div>
