@@ -18,7 +18,6 @@ export const siteConfig = {
     },
     region: "Hunsrück",
     serviceRadius: "deutschlandweit",
-    radiusKm: 0,
     founded: 2000,
     registrationCourt: "Amtsgericht Bad Kreuznach",
     registrationNumber: "HRB 4367",
