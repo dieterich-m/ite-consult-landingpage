@@ -300,7 +300,7 @@ export default function EmmaPage() {
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <a href={NETPLANS_URL} className="inline-flex items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95">WebCast-Platz sichern</a>
-                <a href="#warum" className="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-white/60">Warum ITE Consult das empfiehlt</a>
+                <a href="#warum" className="inline-flex items-center justify-center rounded-xl border border-[#1D4ED8] text-[#1D4ED8] bg-white px-6 py-3 font-semibold hover:bg-blue-50">Warum ITE Consult das empfiehlt</a>
               </div>
             </div>
             <div className="md:col-span-5">
@@ -346,7 +346,7 @@ export default function EmmaPage() {
                 <p className="mt-3 text-slate-em leading-relaxed">Starten Sie klein: Erst den WebCast ansehen, dann die passenden Prozesse identifizieren. Wenn Sie möchten, begleiten wir Sie bei Bewertung, Pilot und sauberer Umsetzung.</p>
                 <div className="mt-6 flex flex-col gap-3">
                   <a href={NETPLANS_URL} className="inline-flex items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95">Jetzt zum WebCast anmelden</a>
-                  <a href="https://www.ite-consult.de/#kontakt" className="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist">Rückfrage an ITE Consult</a>
+                  <a href="https://www.ite-consult.de/#kontakt" className="inline-flex items-center justify-center rounded-xl border border-[#1D4ED8] text-[#1D4ED8] bg-white px-6 py-3 font-semibold hover:bg-blue-50">Rückfrage an ITE Consult</a>
                 </div>
               </div>
             </div>
