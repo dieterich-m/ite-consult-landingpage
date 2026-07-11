@@ -177,7 +177,7 @@ export default function EmmaPage() {
       </section>
 
       {/* EMMA */}
-      <section id="emma" className="bg-white">
+      <section id="emma" className="bg-mist border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-18">
           <div className="max-w-3xl">
             <h2 className="font-serif text-3xl md:text-4xl leading-tight">EMMA von WIANCO: kognitive KI, die Routinen wirklich abnimmt</h2>
