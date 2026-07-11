@@ -18,11 +18,11 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <ProjectsTeaser />
       <TrustBar />
       <ServicesGrid />
       <KITeaser />
       <AboutTeaser />
-      <ProjectsTeaser />
       <LeadMagnet />
       <Testimonials />
       <ServiceArea />
