@@ -75,6 +75,30 @@ export default function EmmaPage() {
         </div>
       </section>
 
+      {/* Social Proof */}
+      <section className="bg-white border-t border-line">
+        <div className="mx-auto container-max px-5 py-10 md:py-12">
+          <p className="text-sm text-slate-em text-center mb-8">Was EMMA in der Praxis erreicht — Quelle: WIANCO Best-Practice-Beispiele</p>
+          <div className="grid sm:grid-cols-3 gap-6">
+            <div className="rounded-2xl border border-line bg-mist p-6">
+              <p className="text-4xl font-serif font-semibold text-ink">20 Std.</p>
+              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Woche eingespart</p>
+              <p className="mt-3 text-slate-em text-sm leading-relaxed">Öffentliche Verwaltung: automatisierte Schreiben-Erstellung aus Excel, Fachverfahren und Webportalen.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-mist p-6">
+              <p className="text-4xl font-serif font-semibold text-ink">1.920 Std.</p>
+              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">pro Jahr automatisiert</p>
+              <p className="mt-3 text-slate-em text-sm leading-relaxed">Privater Sektor: 1.500–2.000 E-Mails täglich aus dem CRM — gesichtet, bewertet, weitergeleitet, dokumentiert.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-mist p-6">
+              <p className="text-4xl font-serif font-semibold text-ink">ROI 320 %</p>
+              <p className="mt-1 text-sm font-semibold text-[#1D4ED8]">fast 6 Monate Vollzeit</p>
+              <p className="mt-3 text-slate-em text-sm leading-relaxed">E-Mail- & Dokumentenprozess im CRM: fast sechs Monate Vollzeitarbeit pro Jahr automatisiert.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Podcast */}
       <section id="podcast" className="bg-mist border-t border-line">
         <div className="mx-auto container-max px-5 py-14 md:py-16">
