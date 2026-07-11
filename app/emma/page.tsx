@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import CopyEmailButton from './_CopyEmailButton'
 
 export const metadata: Metadata = {
   title: 'EMMA – KI-gestützte Automatisierung für KMU & Verwaltung',
@@ -347,11 +346,7 @@ export default function EmmaPage() {
                 <p className="mt-3 text-slate-em leading-relaxed">Starten Sie klein: Erst den WebCast ansehen, dann die passenden Prozesse identifizieren. Wenn Sie möchten, begleiten wir Sie bei Bewertung, Pilot und sauberer Umsetzung.</p>
                 <div className="mt-6 flex flex-col gap-3">
                   <a href={NETPLANS_URL} className="inline-flex items-center justify-center rounded-xl bg-[#1D4ED8] text-white px-6 py-3 font-semibold shadow-soft hover:opacity-95">Jetzt zum WebCast anmelden</a>
-                  <div className="rounded-xl border border-line bg-mist p-4">
-                    <p className="text-sm text-slate-em">Rückfrage an ITE Consult</p>
-                    <p className="mt-1 font-mono text-sm select-all">michael.dieterich@ite-consult.de</p>
-                    <CopyEmailButton />
-                  </div>
+                  <a href="https://www.ite-consult.de/#kontakt" className="inline-flex items-center justify-center rounded-xl border border-line bg-white px-6 py-3 font-semibold hover:bg-mist">Rückfrage an ITE Consult</a>
                 </div>
               </div>
             </div>
