@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="text-white font-bold text-xl mb-2">
               <span className="text-primary font-mono">ITE</span>{" "}
-              {siteConfig.company.name}
+              Consult GmbH
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
               {siteConfig.company.claim}

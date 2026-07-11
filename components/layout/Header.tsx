@@ -36,8 +36,7 @@ export default function Header() {
           className="flex items-center gap-2 font-bold text-primary text-lg shrink-0"
         >
           <span className="text-accent font-mono text-xl">ITE</span>
-          <span className="hidden sm:inline">{siteConfig.company.name}</span>
-          <span className="sm:hidden">ITE</span>
+          <span className="hidden sm:inline">Consult GmbH</span>
         </Link>
 
         {/* Desktop Nav */}
