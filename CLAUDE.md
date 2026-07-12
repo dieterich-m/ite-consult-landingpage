@@ -78,8 +78,8 @@ Reihenfolge und Hintergrundfarben der Sections auf `app/page.tsx`:
 | 2 | ProjectsTeaser – Unser Projekt | `bg-white` |
 | 3 | ProjectsTeaser – Unsere Partner (Slider) | `bg-slate-50` |
 | 4 | TrustBar | `bg-primary` |
-| 5 | ServicesGrid | `bg-white` |
-| 6 | KITeaser | `bg-[#eef6ff]` |
+| 5 | KITeaser | `bg-white` |
+| 6 | ServicesGrid | `bg-[#eef6ff]` |
 | 7 | AboutTeaser | `bg-slate-50` |
 | 8 | LeadMagnet | `bg-primary` |
 | 9 | Testimonials | `bg-white` *(ausgeblendet bis reviewCount > 0)* |
