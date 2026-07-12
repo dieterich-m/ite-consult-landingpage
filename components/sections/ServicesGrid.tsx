@@ -3,7 +3,7 @@ import ServicesGridClient from "@/components/sections/ServicesGridClient";
 
 export default function ServicesGrid() {
   return (
-    <section id="leistungen" className="bg-white py-16 md:py-20">
+    <section id="leistungen" className="bg-[#eef6ff] py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <RevealOnScroll className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">

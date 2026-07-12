@@ -84,7 +84,7 @@ export default function EmmaPage() {
               <p className="mt-4 text-slate-em text-lg leading-relaxed">
                 Warum verschwindet Papier aus Büros, aber manuelle Dateneingabe bleibt? In dieser Episode sprechen wir darüber, wie EMMA wiederkehrende Aufgaben übernimmt – und was das konkret für Verwaltungen und KMU bedeutet.
               </p>
-              <p className="mt-2 text-sm text-slate-em">ca. 26 Minuten · KI-generiert via NotebookLM · ITE Consult GmbH</p>
+              <p className="mt-2 text-sm text-slate-em">ca. 15 Minuten · KI-generiert via NotebookLM · ITE Consult GmbH</p>
               <div className="mt-6">
                 <audio controls preload="none" className="w-full rounded-xl" style={{ accentColor: '#1D4ED8' }}>
                   <source src="/emma/podcast/schluss-mit-digitalem-tipp-ex-dank-emma.m4a" type="audio/mp4" />

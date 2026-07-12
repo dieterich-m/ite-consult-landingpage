@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function KITeaser() {
   return (
-    <section className="bg-[#eef6ff] py-16 md:py-20">
+    <section className="bg-white py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 

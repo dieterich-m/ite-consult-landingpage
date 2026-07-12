@@ -20,8 +20,8 @@ export default function HomePage() {
       <HeroSection />
       <ProjectsTeaser />
       <TrustBar />
-      <ServicesGrid />
       <KITeaser />
+      <ServicesGrid />
       <AboutTeaser />
       <LeadMagnet />
       <Testimonials />

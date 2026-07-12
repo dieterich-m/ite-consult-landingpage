@@ -130,6 +130,16 @@ Enthält zwei separate `<section>`-Elemente (Fragment):
 
 ---
 
+## EMMA-Podcast (`app/emma/page.tsx` · Abschnitt „Podcast")
+
+Audiodatei: `public/emma/podcast/schluss-mit-digitalem-tipp-ex-dank-emma.m4a`
+
+Beim Austausch der Audiodatei immer auch die Laufzeitangabe in `app/emma/page.tsx` aktualisieren (Zeile mit „ca. X Minuten · KI-generiert via NotebookLM · ITE Consult GmbH").
+
+**Stand 12.07.2026:** Neue Kurzfassung eingespielt · ca. 15 Minuten · Dateiname unverändert (kein Code-Change nötig)
+
+---
+
 ## WebCast-Terminpflege (NetPlans / EMMA)
 
 **Dieses Repo ist die einzige Live-Quelle für www.ite-consult.de/emma.**
