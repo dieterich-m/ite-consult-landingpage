@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 }
 
 const NETPLANS_URL =
-  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-12-08-26/'
+  'https://www.netplans.de/veranstaltungen/emma-im-einsatz-23-09-26/'
 
 export default function EmmaPage() {
   return (
@@ -27,7 +27,7 @@ export default function EmmaPage() {
                     <div className="mt-0.5 w-9 h-9 rounded-2xl bg-[#1D4ED8] text-white flex items-center justify-center font-bold" aria-hidden="true">WC</div>
                     <div>
                       <p className="text-sm text-slate-em">Nächster NetPlans WebCast</p>
-                      <p className="mt-1 text-lg font-semibold text-ink leading-tight">12. August 2026 · 10:00 Uhr</p>
+                      <p className="mt-1 text-lg font-semibold text-ink leading-tight">23. September 2026 · 10:00 Uhr</p>
                       <p className="mt-1 text-base sm:text-lg font-semibold text-slate-em leading-snug">EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung</p>
                       <p className="mt-1 text-sm text-slate-em">Online · kostenfrei · ca. 60 Minuten</p>
                       <div className="mt-3 flex flex-wrap gap-2">
