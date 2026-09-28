@@ -152,9 +152,9 @@ Bei jedem neuen Termin diese Dateien aktualisieren:
 | `app/emma/page.tsx` | `NETPLANS_URL` + Hero-Card (Datum) |
 | `app/emma/termine/page.tsx` | `NETPLANS_URL` + `eventJsonLd` (startDate, endDate, location url) + Termin-Block (Datum, Titel) |
 
-**Aktueller Termin (Stand 20.08.2026):**
-- Datum: Mittwoch, 23.09.2026 · 10:00–11:00 Uhr
+**Aktueller Termin (Stand 28.09.2026):**
+- Datum: Mittwoch, 04.11.2026 · 10:00–11:00 Uhr
 - Titel: NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung
-- URL: https://www.netplans.de/veranstaltungen/emma-im-einsatz-23-09-26/
+- URL: https://www.netplans.de/veranstaltungen/emma-im-einsatz-04-11-26/
 
 **Vergangene Events:** Seite + Sitemap-Eintrag + alle Links vollständig entfernen.
