@@ -1,5 +1,9 @@
 # Handwerker-Landingpage System
 
+## Memory
+Projektspezifische Erinnerungen (Workflow, Feedback, Kontext) liegen unter:
+`~/.claude/projects/-Users-michaeldieterich-Documents-VSCode-ITE-WebDesign-ite-consult-landingpage/memory/`
+
 ## Kontext
 Lead-generierende Landingpage für deutsche Handwerksbetriebe. Die Branche und alle Inhalte werden ausschließlich aus `docs/BRANCHE.md` geladen. Für Seitenstruktur, Design und technische Anforderungen: siehe `docs/ANFORDERUNGEN.md`.
 
@@ -152,9 +156,9 @@ Bei jedem neuen Termin diese Dateien aktualisieren:
 | `app/emma/page.tsx` | `NETPLANS_URL` + Hero-Card (Datum) |
 | `app/emma/termine/page.tsx` | `NETPLANS_URL` + `eventJsonLd` (startDate, endDate, location url) + Termin-Block (Datum, Titel) |
 
-**Aktueller Termin (Stand 28.09.2026):**
-- Datum: Mittwoch, 04.11.2026 · 10:00–11:00 Uhr
+**Aktueller Termin (Stand 08.11.2026):**
+- Datum: Mittwoch, 16.12.2026 · 10:00–11:00 Uhr
 - Titel: NetPlans Webcast | EMMA live: So sparen Unternehmen Zeit mit smarter Automatisierung
-- URL: https://www.netplans.de/veranstaltungen/emma-im-einsatz-04-11-26/
+- URL: https://www.netplans.de/veranstaltungen/emma-im-einsatz-16-12-26/
 
 **Vergangene Events:** Seite + Sitemap-Eintrag + alle Links vollständig entfernen.
